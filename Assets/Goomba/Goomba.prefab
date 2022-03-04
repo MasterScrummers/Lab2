@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1352688271323212225}
   - component: {fileID: -9189851611007247043}
   - component: {fileID: 9084544683708317865}
-  - component: {fileID: 1055642223173794167}
+  - component: {fileID: 9084544683708317867}
   m_Layer: 0
   m_Name: Goomba
   m_TagString: enemy
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8636182426944618358}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -147,7 +147,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &9084544683708317865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,28 +160,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa273ce3a2a3c045967177c5bbf1402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!68 &1055642223173794167
-EdgeCollider2D:
+--- !u!95 &9084544683708317867
+Animator:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8636182426944618358}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.116971, y: -0.451465}
-  - {x: -1.116971, y: -0.451465}
-  - {x: -1.116323, y: -0.11977449}
-  - {x: -1.1155984, y: 0.3001644}
-  - {x: -1.1152725, y: 0.46400583}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1bd464bc4f5e3b40b6983a6089fb971, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
