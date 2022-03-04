@@ -6,17 +6,19 @@ public class goombaBehavior : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    int direction; 
+    int direction;
+    float movementSpeed;
 
     void Start()
     {
         direction = -1; //left is -1, right is 1.
+        movementSpeed = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(direction, 0, 0) * Time.deltaTime;
+        transform.position += new Vector3(direction, 0, 0) * Time.deltaTime * movementSpeed;
     }
 
     void DeathSequence()
