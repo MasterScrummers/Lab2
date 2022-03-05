@@ -12,7 +12,7 @@ public class goombaBehavior : MonoBehaviour
     void Start()
     {
         direction = -1; //left is -1, right is 1.
-        movementSpeed = 3;
+        movementSpeed = 6;
     }
 
     // Update is called once per frame

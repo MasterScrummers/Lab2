@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 357770757553441321}
   - component: {fileID: 1352688271323212225}
   - component: {fileID: -9189851611007247043}
-  - component: {fileID: 9084544683708317865}
   - component: {fileID: 9084544683708317867}
   m_Layer: 7
   m_Name: Goomba
@@ -148,18 +147,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &9084544683708317865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8636182426944618358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa273ce3a2a3c045967177c5bbf1402, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &9084544683708317867
 Animator:
   serializedVersion: 4
