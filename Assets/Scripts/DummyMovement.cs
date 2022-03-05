@@ -5,7 +5,7 @@ using UnityEngine;
 public class DummyMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    float speed = 0.1f;
+    float speed = 3f;
     void Start()
     {
         
@@ -19,7 +19,7 @@ public class DummyMovement : MonoBehaviour
           
             //Debug.Log("Moving left");
             Vector3 pos = this.transform.position;
-            pos.x -= 1 * speed;
+            pos.x -= 1 * speed * Time.deltaTime;
             this.transform.position = pos;
         }
 
@@ -29,21 +29,21 @@ public class DummyMovement : MonoBehaviour
 
 
             Vector3 pos = this.transform.position;
-            pos.x += 1 * speed;
+            pos.x += 1 * speed * Time.deltaTime;
             this.transform.position = pos;
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
             Vector3 pos = this.transform.position;
-            pos.y += 1 * speed;
+            pos.y += 1 * speed *Time.deltaTime;
             this.transform.position = pos;
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
             Vector3 pos = this.transform.position;
-            pos.y -= 1 * speed;
+            pos.y -= 1 * speed * Time.deltaTime;
             this.transform.position = pos;
         }
     }
