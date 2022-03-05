@@ -1078,7 +1078,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1124,6 +1124,7 @@ TextureImporter:
       Level Tiles_35: -388393804
       Level Tiles_22: 1921560421
       Level Tiles_19: 94902600
+      Invisible: -91244466
       Level Tiles_21: -1861377808
       Level Tiles_4: -1186380128
       Level Tiles_45: 968226867

@@ -28,11 +28,6 @@ public class AudioController : MonoBehaviour
             }
             allClips.Add(clip.name, clip);
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
         soundPlayers = new List<AudioSource>();
         musicPlayer = gameObject.AddComponent<AudioSource>();
         musicPlayer.loop = true;
