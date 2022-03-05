@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Animator animator;
 
-
     void Start()
     {
         jumpTimeCounter = jumpTime; //Set Max jump time = counter
@@ -51,13 +50,13 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetAxis("Horizontal") > 0)
             {
-                transform.rotation = Quaternion.Euler(0, 0, 0);
+                transform.eulerAngles = new Vector3(0, 0, 0);
                 animator.SetBool("IsMoving", true);
             }
 
             if (Input.GetAxis("Horizontal") < 0)
             {
-                transform.rotation = Quaternion.Euler(0, 180, 0);
+                transform.eulerAngles = new Vector3(0, 180, 0);
                 animator.SetBool("IsMoving", true);
             }
 
@@ -85,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // If Player Press the space bar
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             //And if Mario is on the ground
             if (grounded)
@@ -98,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //If Player is holding space bar
-        if (((Input.GetKey(KeyCode.Space)) || Input.GetKey(KeyCode.W))&& !stoppedJumping)
+        if ((Input.GetKey(KeyCode.Space)) && !stoppedJumping)
         {
             //And if the counter is > 0
             if (jumpTimeCounter > 0)
@@ -111,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // If Player release space bar
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             //Stop Jumping 
             jumpTimeCounter = 0;
