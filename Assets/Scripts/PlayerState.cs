@@ -7,6 +7,8 @@ public class PlayerState : MonoBehaviour
     [SerializeField] GameObject player;
     Rigidbody2D playerRigidbody2D;
 
+    [SerializeField] GameObject playerPrefab;
+
     [SerializeField] Sprite deathSprite;
 
     const float deathLength = 5.0f;
@@ -41,6 +43,7 @@ public class PlayerState : MonoBehaviour
 
     public void TriggerDeath(bool playDeathAnim) {
         
+        player.GetComponent<DummyController>().enabled = false;
         deathSeq = true;
         player.GetComponent<SpriteRenderer>().sprite = deathSprite;
 
@@ -55,7 +58,10 @@ public class PlayerState : MonoBehaviour
     }
 
     public void TriggerRespawn() {
-
+        
         deathSeq = false;
+
+        Destroy(player);
+        Instantiate(playerPrefab);
     }
 }
