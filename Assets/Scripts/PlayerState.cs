@@ -13,9 +13,11 @@ public class PlayerState : MonoBehaviour
 
     const float deathLength = 5.0f;
     float deathTimer;
-
     bool deathSeq;
     
+    const int max_lives = 9;
+    int currentLives;
+
     void Awake() 
     {
         playerRigidbody2D = player.GetComponent<Rigidbody2D>();
@@ -26,6 +28,8 @@ public class PlayerState : MonoBehaviour
     {
         deathSeq = false;
         deathTimer = deathLength;
+
+        currentLives = max_lives;
         TriggerDeath(true);
     }
 
@@ -36,7 +40,11 @@ public class PlayerState : MonoBehaviour
             deathTimer -= Time.deltaTime;
 
             if (deathTimer <= 0) {
-                TriggerRespawn();
+                if (currentLives >= 1) {
+                    TriggerRespawn();  
+                } else {
+                    TriggerGameOver();
+                }
             }
         }
     }
@@ -63,5 +71,10 @@ public class PlayerState : MonoBehaviour
 
         Destroy(player);
         Instantiate(playerPrefab);
+        currentLives -= 1;
+    }
+
+    void TriggerGameOver() {
+        Debug.Log("Game over");
     }
 }
