@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 154305799}
   - component: {fileID: 154305798}
   - component: {fileID: 154305801}
+  - component: {fileID: 154305802}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -196,6 +197,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad70a50fa03763c44854edd824d157b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onlyOneAllowed: 1
+--- !u!114 &154305802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154305797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3eaca46ada1fcb43bae10b243ec30ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips: []
 --- !u!1 &379136710
 GameObject:
   m_ObjectHideFlags: 0
@@ -6028,6 +6043,7 @@ GameObject:
   - component: {fileID: 732294852}
   - component: {fileID: 732294854}
   - component: {fileID: 732294853}
+  - component: {fileID: 732294855}
   m_Layer: 0
   m_Name: Bricks
   m_TagString: Untagged
@@ -6108,16 +6124,6 @@ Tilemap:
   m_GameObject: {fileID: 732294851}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: 3, y: -3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 11, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -6432,8 +6438,8 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 00bb0a162f12cdc46a13893bf6b05036, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 31
     m_Data: {fileID: 11400000, guid: 9eac39636667dd248bcd3551a6a0bdf2, type: 2}
   m_TileSpriteArray:
@@ -6443,10 +6449,10 @@ Tilemap:
     m_Data: {fileID: -1236575897, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 1373741712, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 32
+  - m_RefCount: 31
     m_Data:
       e00: 1
       e01: 0
@@ -6465,7 +6471,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 32
+  - m_RefCount: 31
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
@@ -6495,6 +6501,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &732294855
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732294851}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &951523339
 GameObject:
   m_ObjectHideFlags: 0
@@ -6863,8 +6885,8 @@ Tilemap:
   - first: {x: 3, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 25
-      m_TileSpriteIndex: 14
+      m_TileIndex: 23
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -9358,11 +9380,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 1e1889243e2467d4a82b808964b4f7c7, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: f4d34a0e6871587469f0adf1686632a4, type: 2}
-  - m_RefCount: 18
+  - m_RefCount: 19
     m_Data: {fileID: 11400000, guid: 00bb0a162f12cdc46a13893bf6b05036, type: 2}
   - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: b01614f4f05749b4994e1fcd75cb2f38, type: 2}
-  - m_RefCount: 10
+  - m_RefCount: 9
     m_Data: {fileID: 11400000, guid: 5e4a91b12ce39d44dabb46e8a7f1b8fb, type: 2}
   - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: 674f3362f856b71498ad12c55045932d, type: 2}
@@ -9403,9 +9425,9 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: 1891996824, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
-  - m_RefCount: 18
+  - m_RefCount: 19
     m_Data: {fileID: 1373741712, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
-  - m_RefCount: 10
+  - m_RefCount: 9
     m_Data: {fileID: -1158559770, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 648335403, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
