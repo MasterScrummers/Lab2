@@ -3,7 +3,7 @@ public class UIScore : UICounter
     protected override void Start()
     {
         base.Start();
-        counterName = "Score";
+        counterName = "SCORE";
         prevValue = globalVars.score + 1;
     }
 

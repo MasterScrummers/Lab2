@@ -3,7 +3,7 @@ public class UILives : UICounter
     protected override void Start()
     {
         base.Start();
-        counterName = "Score";
+        counterName = "LIVES";
         prevValue = globalVars.lives + 1;
     }
 

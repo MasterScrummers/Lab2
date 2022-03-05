@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioController))]
 public class ControllerPack : MonoBehaviour
 {
-    /* This script does nothing by ensures
-     * all the controllers are on the attached gameobject
+    /* This script does nothing but ensures all the
+     * controllers are on the attached gameobject.
      */
 }

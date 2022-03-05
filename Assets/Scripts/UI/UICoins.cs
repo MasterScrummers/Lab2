@@ -3,7 +3,7 @@ public class UICoins : UICounter
     protected override void Start()
     {
         base.Start();
-        counterName = "Coins";
+        counterName = "COINS";
         prevValue = globalVars.coins + 1;
     }
 

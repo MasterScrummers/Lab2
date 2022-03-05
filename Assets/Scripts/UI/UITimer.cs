@@ -8,7 +8,7 @@ public class UITimer : UICounter
     protected override void Start()
     {
         base.Start();
-        counterName = "Time";
+        counterName = "TIME";
         remainingTime = startTime;
         prevValue = (int)remainingTime + 1;
     }
