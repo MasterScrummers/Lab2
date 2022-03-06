@@ -38,7 +38,7 @@ public class CoinBlock : MonoBehaviour
             {
                 tilemap.SetTile(cellPosition, newtile);
                 numCoins++;
-                coinsUI.text = "COINS/n" + numCoins;
+                coinsUI.text = "COINS\n" + numCoins;
             }
            
         }
