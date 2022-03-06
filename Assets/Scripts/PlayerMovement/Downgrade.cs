@@ -19,7 +19,7 @@ public class Downgrade : MonoBehaviour
     }
     void Change()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             animator.Play("Downgrade_to_SmallMario");
             StartCoroutine(DestoryTimer());
