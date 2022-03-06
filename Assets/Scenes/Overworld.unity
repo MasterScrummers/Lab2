@@ -211,75 +211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips: []
---- !u!1001 &155423329
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1070300175252897314, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_Name
-      value: Mario_Small
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897318, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897319, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: prefab
-      value: 
-      objectReference: {fileID: 3347756790971201365, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.277
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.3143
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8138229032885720795, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
-      propertyPath: prefab
-      value: 
-      objectReference: {fileID: 3347756790971201365, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
 --- !u!1 &379136710
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +519,7 @@ GameObject:
   - component: {fileID: 463759749}
   - component: {fileID: 463759748}
   - component: {fileID: 463759750}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Ground and Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6872,7 +6803,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1057457165
-  m_SortingLayer: 0
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
