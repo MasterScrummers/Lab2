@@ -20,11 +20,21 @@ public class PlayerMovement : MonoBehaviour
     public float radius; //the float groundCheckRadius allows you to set a radius for the groundCheck, to adjust the way you interact with the ground*/
 
     private Rigidbody2D rb;
+    private BoxCollider2D playerCollider;
     private Animator animator;
 
+    private float walkSpeed;
+
+
+    private Vector2 standColliderSize;
+    private Vector2 standColliderOffset;
+    private Vector2 crouchColliderSize;
+    private Vector2 crouchColliderOffset;
+    float crouchHeight = 0.7f;
 
     void Start()
     {
+        walkSpeed = speed;
         jumpTimeCounter = jumpTime; //Set Max jump time = counter
         animator = GetComponent<Animator>();
 
@@ -38,13 +48,24 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("Cant find Rigidbody");
         }
+
+        playerCollider = GetComponent<BoxCollider2D>();
+        if (playerCollider == null)
+        {
+            Debug.Log("Can't find BoxCollider");
+        }
+
+        standColliderSize = playerCollider.size;
+        standColliderOffset = playerCollider.offset;
+        crouchColliderSize = new Vector2(standColliderSize.x, standColliderSize.y * crouchHeight);
+        crouchColliderOffset = new Vector2(standColliderOffset.x, standColliderOffset.y * crouchHeight);
     }
 
     void Update()
     {
         Jump();
         Move();
-
+        Crouch();
     }
 
     void FixedUpdate()
@@ -126,6 +147,29 @@ public class PlayerMovement : MonoBehaviour
             //Stop Jumping 
             jumpTimeCounter = 0;
             stoppedJumping = true;
+        }
+    }
+
+    void Crouch()
+    {
+
+        if (gameObject.tag == "Mario_Big")
+        {
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                speed = 0;
+                animator.SetBool("IsCrouching", true);
+                playerCollider.size = crouchColliderSize;
+                playerCollider.offset = crouchColliderOffset;
+            }
+
+            else if (Input.GetKeyUp(KeyCode.S))
+            {
+                speed = walkSpeed;
+                animator.SetBool("IsCrouching", false);
+                playerCollider.size = standColliderSize;
+                playerCollider.offset = standColliderOffset;
+            }
         }
     }
 
