@@ -21,18 +21,36 @@ public class Upgrade : MonoBehaviour
     {
         if (other.tag == "powerUp")
         {
-            animator.Play("Upgrade_to_BigMario");
-            StartCoroutine(DestoryTimer());
+            if (gameObject.tag == "Player")
+            {
+                animator.Play("Upgrade_to_BigMario");
+                StartCoroutine(DestroyTimer());
+            }
+
+            else if (gameObject.tag == "Mario_Big")
+            {
+
+            }
         }
 
+        else if (other.tag == "FireFlower")
+        {
+            Replace();
+        }
     }
 
-    IEnumerator DestoryTimer()
+    IEnumerator DestroyTimer()
     {
         float animationTime = animator.runtimeAnimatorController.animationClips[3].length;
         yield return new WaitForSeconds(animationTime);
         Transform spawnTransform = gameObject.GetComponent<Transform>();
         Instantiate(prefab, new Vector3(spawnTransform.position.x, spawnTransform.position.y + 0.5f, spawnTransform.position.z), Quaternion.identity);
+        Destroy(gameObject);
+    }
+
+    void Replace()
+    {
+        Instantiate(prefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

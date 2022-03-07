@@ -10,6 +10,7 @@ TagManager:
   - powerUp
   - foot
   - Mario_Big
+  - FireFlower
   layers:
   - Default
   - TransparentFX
