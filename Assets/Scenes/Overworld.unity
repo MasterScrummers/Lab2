@@ -11694,6 +11694,7 @@ GameObject:
   - component: {fileID: 1386832392}
   - component: {fileID: 1386832391}
   - component: {fileID: 1386832390}
+  - component: {fileID: 1386832393}
   m_Layer: 0
   m_Name: Powerup Blocks
   m_TagString: Untagged
@@ -11873,6 +11874,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1386832393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386832388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4db5d354e5fa74ca966c086ef0d3c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockSprites:
+  - {fileID: -1531171578, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
+  - {fileID: -1186380128, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
+  coinsUI: {fileID: 0}
 --- !u!1 &1570498498 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8060661286887571330, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}

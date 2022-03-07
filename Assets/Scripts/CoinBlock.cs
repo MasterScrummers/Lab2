@@ -37,8 +37,15 @@ public class CoinBlock : MonoBehaviour
             if (colBlock.sprite == blockSprites[0])
             {
                 tilemap.SetTile(cellPosition, newtile);
-                numCoins++;
-                coinsUI.text = "COINS\n" + numCoins;
+                //Adds to and updates Coin UI
+                if(gameObject.name == "Coin Blocks")
+                {
+                    numCoins++;
+                    coinsUI.text = "COINS\n" + numCoins;
+                }
+
+                //ADD FUNCTIONALITY FOR DIFFERENT POWERUPS HERE
+
             }
            
         }
