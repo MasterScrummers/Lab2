@@ -30,7 +30,7 @@ public class CoinBlock : MonoBehaviour
         {
             Vector3Int cellPosition = tilemap.WorldToCell(col.GetContact(0).collider.transform.position);
             cellPosition.y++;
-            Debug.Log(cellPosition);
+            //Debug.Log(cellPosition);
             Tile colBlock = (Tile)tilemap.GetTile(cellPosition);
             Tile newtile = ScriptableObject.CreateInstance<Tile>();
             newtile.sprite = blockSprites[1];

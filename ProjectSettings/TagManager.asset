@@ -10,6 +10,7 @@ TagManager:
   - powerUp
   - foot
   - head
+  - coins
   layers:
   - Default
   - TransparentFX
