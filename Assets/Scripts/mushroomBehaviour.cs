@@ -26,10 +26,13 @@ public class mushroomBehaviour : MonoBehaviour
 
     void DeathSequence()
     {
+        /*
         if (gameState) {
             gameState.marioPowerUp(1);
         }
+         */
         Destroy(gameObject);
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -39,9 +42,13 @@ public class mushroomBehaviour : MonoBehaviour
             direction *= -1;
 
         }
-        else if (collision.gameObject.CompareTag("Player"))
+
+        
+        else if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Mario_Big"))
         {
             DeathSequence();
         }
+        
+
     }
 }

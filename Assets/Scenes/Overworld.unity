@@ -183,7 +183,7 @@ Transform:
   m_Children:
   - {fileID: 1966136197}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &154305801
 MonoBehaviour:
@@ -6032,6 +6032,63 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1001 &487481057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.8526177
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.37866902
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536529, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550158163742536534, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
+      propertyPath: m_Name
+      value: Fire_Flower_Mario
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
 --- !u!1 &732294851
 GameObject:
   m_ObjectHideFlags: 0
@@ -6647,7 +6704,7 @@ Transform:
   - {fileID: 379136711}
   - {fileID: 732294852}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1072477029
 GameObject:
@@ -9571,67 +9628,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &1319867948
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201362, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201365, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_Name
-      value: Mario_Big
-      objectReference: {fileID: 0}
-    - target: {fileID: 3347756790971201365, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
-      propertyPath: m_TagString
-      value: Mario_Big
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
 --- !u!1 &1482338256
 GameObject:
   m_ObjectHideFlags: 0

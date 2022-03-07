@@ -15,15 +15,16 @@ public class Upgrade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Change();
+
     }
-    void Change()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (Input.GetKeyDown(KeyCode.U))
+        if (other.tag == "powerUp")
         {
             animator.Play("Upgrade_to_BigMario");
             StartCoroutine(DestoryTimer());
         }
+
     }
 
     IEnumerator DestoryTimer()
@@ -31,7 +32,7 @@ public class Upgrade : MonoBehaviour
         float animationTime = animator.runtimeAnimatorController.animationClips[3].length;
         yield return new WaitForSeconds(animationTime);
         Transform spawnTransform = gameObject.GetComponent<Transform>();
-        Instantiate(prefab, new Vector3(spawnTransform.position.x, spawnTransform.position.y + 1, spawnTransform.position.z), Quaternion.identity);
+        Instantiate(prefab, new Vector3(spawnTransform.position.x, spawnTransform.position.y + 0.5f, spawnTransform.position.z), Quaternion.identity);
         Destroy(gameObject);
     }
 }
