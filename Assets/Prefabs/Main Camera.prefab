@@ -99,5 +99,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followObject: {fileID: 0}
   leftBoundary: {fileID: 0}
-  followOffset: {x: 1, y: 1}
+  followOffset: {x: 11, y: 3}
   speed: 3
