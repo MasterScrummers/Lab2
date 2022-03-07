@@ -135,7 +135,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      items-objects_0: 1720576848
       Flag: -2077849394
+      items-objects_4: 1558258255
+      items-objects_1: 1510639634
+      coin2: 167091843
+      coin3: 299359286
+      items-objects_2: -1475891405
+      items-objects_3: 354561350
+      coin1: -1755378444
+      coin4: -371940978
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

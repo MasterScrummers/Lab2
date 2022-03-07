@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 379136712}
   - component: {fileID: 379136714}
   - component: {fileID: 379136715}
+  - component: {fileID: 379136716}
   m_Layer: 0
   m_Name: Question Blocks
   m_TagString: Untagged
@@ -579,6 +580,26 @@ MonoBehaviour:
   - {fileID: -1531171578, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
   - {fileID: -1186380128, guid: 988126f7919490b4d8ee87923618c2c9, type: 3}
   coinsUI: {fileID: 973343225}
+--- !u!95 &379136716
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379136710}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb9b9ba9ab96faf4a8d701405fcb1c33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &463759746
 GameObject:
   m_ObjectHideFlags: 0
