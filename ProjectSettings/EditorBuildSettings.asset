@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CameraScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Overworld.unity
+    guid: 774362f2645cb7f44b12b1a75b213358
+  - enabled: 1
+    path: Assets/Scenes/Underground.unity
+    guid: 5b33faf5ac17a3547861b86ca04dd8c7
   m_configObjects: {}
