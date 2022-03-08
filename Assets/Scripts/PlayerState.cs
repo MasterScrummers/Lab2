@@ -11,11 +11,14 @@ public class PlayerState : MonoBehaviour
 
     [SerializeField] Sprite deathSprite;
 
+    [SerializeField] GameObject gameController;
+    VariableController varController;
+
+
     const float deathLength = 5.0f;
     float deathTimer;
     bool deathSeq;
     
-    const int max_lives = 9;
     int currentLives;
 
     void Awake() 
@@ -26,10 +29,12 @@ public class PlayerState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        VariableController varController = gameController.GetComponent<VariableController>();
         deathSeq = false;
         deathTimer = deathLength;
 
-        currentLives = max_lives;
+        currentLives = varController.ResetLives();
+        
         TriggerDeath(true);
     }
 
@@ -40,7 +45,7 @@ public class PlayerState : MonoBehaviour
             deathTimer -= Time.deltaTime;
 
             if (deathTimer <= 0) {
-                if (currentLives >= 1) {
+                if (currentLives > 1) {
                     TriggerRespawn();  
                 } else {
                     TriggerGameOver();
@@ -51,7 +56,7 @@ public class PlayerState : MonoBehaviour
 
     public void TriggerDeath(bool playDeathAnim) {
         
-        player.GetComponent<DummyController>().enabled = false;
+        // player.GetComponent<DummyController>().enabled = false;
         deathSeq = true;
         player.GetComponent<SpriteRenderer>().sprite = deathSprite;
 
@@ -66,12 +71,14 @@ public class PlayerState : MonoBehaviour
     }
 
     public void TriggerRespawn() {
-        
+
         deathSeq = false;
 
         Destroy(player);
         Instantiate(playerPrefab);
-        currentLives -= 1;
+
+        varController = gameController.GetComponent<VariableController>();
+        currentLives = varController.DecrementLife();
     }
 
     void TriggerGameOver() {

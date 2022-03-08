@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class UILives : UICounter
 {
     protected override void Start()
