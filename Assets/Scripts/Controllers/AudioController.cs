@@ -77,4 +77,9 @@ public class AudioController : MonoBehaviour
 
         PlayAudio(player, clipName);
     }
+
+    public void StopMusic () {
+        musicPlayer.Stop();
+        musicPlayer.clip = null;
+    }
 }

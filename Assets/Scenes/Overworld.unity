@@ -133,6 +133,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 170849633533052734, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
   m_PrefabInstance: {fileID: 170849634485457119}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &284036750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284036744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e0386eca717c54ab8bf95f06a4ea45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerState: {fileID: 0}
 --- !u!1 &379136710
 GameObject:
   m_ObjectHideFlags: 0
@@ -11716,6 +11729,64 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1798125569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1798125571}
+  - component: {fileID: 1798125570}
+  m_Layer: 0
+  m_Name: Death Boundary
+  m_TagString: fallingBoundary
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1798125570
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798125569}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1798125571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798125569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 72.87, y: -6.57, z: 0}
+  m_LocalScale: {x: 500, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1881513509
 GameObject:
   m_ObjectHideFlags: 0
@@ -11726,9 +11797,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1881513511}
   - component: {fileID: 1881513510}
+  - component: {fileID: 1881513512}
   m_Layer: 0
   m_Name: DeathRespawnController
-  m_TagString: Untagged
+  m_TagString: deathrespawncontroller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11762,8 +11834,21 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881513512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881513509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad70a50fa03763c44854edd824d157b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onlyOneAllowed: 1
 --- !u!1 &2058858829
 GameObject:
   m_ObjectHideFlags: 0
@@ -12011,7 +12096,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2133963652
 MonoBehaviour:
@@ -12042,11 +12127,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.2
+      value: 60.93
       objectReference: {fileID: 0}
     - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1
+      value: -2.56
       objectReference: {fileID: 0}
     - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12079,6 +12164,10 @@ PrefabInstance:
     - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 170849633533052733, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 170849633533052734, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
       propertyPath: m_Name

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DummyController : MonoBehaviour
 {
+    [SerializeField] GameObject playerState;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerState = GameObject.FindWithTag("deathrespawncontroller");
     }
 
     // Update is called once per frame
@@ -15,6 +16,20 @@ public class DummyController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W)) {
             Debug.Log("Pressed w");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        {
+            if (other.gameObject.CompareTag("enemy")) {
+                playerState.GetComponent<PlayerState>().TriggerDeath(true);
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("fallingBoundary")) {
+            playerState.GetComponent<PlayerState>().TriggerDeath(false);
         }
     }
 }

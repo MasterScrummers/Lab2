@@ -13,7 +13,9 @@ public class PlayerState : MonoBehaviour
 
     [SerializeField] GameObject gameController;
     VariableController varController;
+    AudioController audioController;
 
+    Vector3 playerStartPos = new Vector3(-8.38f, -2.56f);
 
     const float deathLength = 5.0f;
     float deathTimer;
@@ -29,13 +31,13 @@ public class PlayerState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        VariableController varController = gameController.GetComponent<VariableController>();
+        varController = gameController.GetComponent<VariableController>();
+        audioController = gameController.GetComponent<AudioController>();
+
         deathSeq = false;
         deathTimer = deathLength;
 
         currentLives = varController.ResetLives();
-        
-        TriggerDeath(true);
     }
 
     // Update is called once per frame
@@ -56,7 +58,9 @@ public class PlayerState : MonoBehaviour
 
     public void TriggerDeath(bool playDeathAnim) {
         
-        // player.GetComponent<DummyController>().enabled = false;
+        audioController.StopMusic();
+        audioController.PlaySound("Death");
+        player.GetComponent<DummyController>().enabled = false;
         deathSeq = true;
         player.GetComponent<SpriteRenderer>().sprite = deathSprite;
 
@@ -68,16 +72,19 @@ public class PlayerState : MonoBehaviour
 
     void StartDeathAnim() {
         playerRigidbody2D.AddForce(new Vector2(0f, 400));
+        player.GetComponent<BoxCollider2D>().enabled = false;
     }
 
     public void TriggerRespawn() {
 
         deathSeq = false;
+        deathTimer = deathLength;
 
-        Destroy(player);
-        Instantiate(playerPrefab);
+        player.GetComponent<BoxCollider2D>().enabled = true;
+        player.GetComponent<DummyController>().enabled = true;
 
-        varController = gameController.GetComponent<VariableController>();
+        gameController.GetComponent<SceneController>().ChangeScene("Overworld", playerStartPos);
+        //change sprite back to normal mario
         currentLives = varController.DecrementLife();
     }
 
