@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -2002,8 +2002,8 @@ TextureImporter:
       smb_mario_sheet_17: 473482493
       smb_mario_sheet_32: -683460735
       smb_mario_sheet_56: 342957615
-      smb_mario_sheet_47: 595066645
       smb_mario_sheet_72: -1355648569
+      smb_mario_sheet_47: 595066645
       smb_mario_sheet_68: 439457558
       smb_mario_sheet_28: -1551945767
       smb_mario_sheet_51: 554957329
