@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2780243014646787072}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2550158163742536533}
   - component: {fileID: 2995924116633251490}
   - component: {fileID: 7731684342752174717}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fire_Flower_Mario
   m_TagString: Mario_Big
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2995924116633251490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,7 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3870353630766463338}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}

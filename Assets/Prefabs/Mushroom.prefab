@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6002058366955028725}
   - component: {fileID: 1767590414065430078}
   - component: {fileID: -8064139728660177834}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Mushroom
   m_TagString: powerUp
   m_Icon: {fileID: 0}

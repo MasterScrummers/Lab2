@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1070300175252897319}
   - component: {fileID: 1070300175252897316}
   - component: {fileID: 1070300175252897317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mario_Small
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -123,7 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5bad3198807604699c180e1cd34064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3347756790971201365, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
+  prefab1: {fileID: 3347756790971201365, guid: e273462f9e90f3145b411a51bf48d65a, type: 3}
+  prefab2: {fileID: 2550158163742536534, guid: 35db97288f4d05b45a76fdf2d45c8277, type: 3}
 --- !u!114 &1070300175252897319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +169,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1070300175252897317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -204,7 +205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1070300175267349861}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1070300175364944917}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}

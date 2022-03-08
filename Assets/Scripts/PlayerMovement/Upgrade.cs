@@ -5,7 +5,8 @@ using UnityEngine;
 public class Upgrade : MonoBehaviour
 {
     private Animator animator;
-    public GameObject prefab;
+    public GameObject prefab1;
+    public GameObject prefab2;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class Upgrade : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "powerUp")
+        if (other.tag == "powerUp" && other.tag !="FireFlower")
         {
             if (gameObject.tag == "Player")
             {
@@ -35,7 +36,7 @@ public class Upgrade : MonoBehaviour
 
         else if (other.tag == "FireFlower")
         {
-            Replace();
+            Replace(2);
         }
     }
 
@@ -44,13 +45,19 @@ public class Upgrade : MonoBehaviour
         float animationTime = animator.runtimeAnimatorController.animationClips[3].length;
         yield return new WaitForSeconds(animationTime);
         Transform spawnTransform = gameObject.GetComponent<Transform>();
-        Instantiate(prefab, new Vector3(spawnTransform.position.x, spawnTransform.position.y + 0.5f, spawnTransform.position.z), Quaternion.identity);
+        Instantiate(prefab1, new Vector3(spawnTransform.position.x, spawnTransform.position.y + 0.5f, spawnTransform.position.z), Quaternion.identity);
         Destroy(gameObject);
     }
 
-    void Replace()
+    void Replace(int power)
     {
-        Instantiate(prefab, transform.position, Quaternion.identity);
+        if(power == 1){
+        Instantiate(prefab1, transform.position, Quaternion.identity);
         Destroy(gameObject);
+    }else if(power == 2)
+        {
+    Instantiate(prefab2, transform.position, Quaternion.identity);
+    Destroy(gameObject);
+        }
     }
 }

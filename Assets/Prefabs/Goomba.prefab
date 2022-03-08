@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1352688271323212225}
   - component: {fileID: -9189851611007247043}
   - component: {fileID: 9084544683708317867}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Goomba
   m_TagString: enemy
   m_Icon: {fileID: 0}

@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 381575862}
   - component: {fileID: 381575861}
   - component: {fileID: 381575860}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 830646581}
   - component: {fileID: 830646580}
   - component: {fileID: 830646582}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8697095795640906146, guid: 78631d8371aee7c4e933b421a20354a7, type: 3}
       propertyPath: m_Mass
-      value: 11.200481
+      value: 4.6468816
       objectReference: {fileID: 0}
     - target: {fileID: -8697095795640906146, guid: 78631d8371aee7c4e933b421a20354a7, type: 3}
       propertyPath: m_AngularDrag
