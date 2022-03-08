@@ -5,6 +5,7 @@ using UnityEngine;
 public class DummyController : MonoBehaviour
 {
     [SerializeField] GameObject playerState;
+    [SerializeField] GameObject flag;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,8 @@ public class DummyController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("fallingBoundary")) {
             playerState.GetComponent<PlayerState>().TriggerDeath(false);
+        } else if (other.CompareTag("flagPole")) {
+            flag.GetComponent<FlagEnding>().TriggerFlagEnding();
         }
     }
 }

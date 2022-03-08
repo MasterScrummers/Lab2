@@ -11,6 +11,7 @@ TagManager:
   - foot
   - deathrespawncontroller
   - fallingBoundary
+  - flagPole
   layers:
   - Default
   - TransparentFX

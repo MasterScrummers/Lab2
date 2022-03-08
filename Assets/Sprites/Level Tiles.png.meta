@@ -1090,6 +1090,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Level Tiles_47
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c47c31430ca7184a89c52b97c021c3e
+      internalID: -1957001084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Tiles_48
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 253
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a73bf34cdc1904ca9944d7db6e31c6
+      internalID: 604388820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1113,6 +1155,7 @@ TextureImporter:
       Level Tiles_46: -830418229
       Level Tiles_28: 1610006647
       Level Tiles_24: 1541397835
+      Level Tiles_48: 604388820
       Level Tiles_37: -1158559770
       Level Tiles_14: 350833111
       Level Tiles_36: -1453505892
@@ -1130,6 +1173,7 @@ TextureImporter:
       Level Tiles_45: 968226867
       Level Tiles_25: 1263180383
       Level Tiles_3: 175556326
+      Level Tiles_47: -1957001084
       Level Tiles_20: -264565484
       Level Tiles_2: -747467683
       Level Tiles_11: -24892583

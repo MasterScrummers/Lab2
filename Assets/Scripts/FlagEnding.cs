@@ -8,8 +8,11 @@ public class FlagEnding : MonoBehaviour
     [SerializeField] Sprite slideSprite;
     [SerializeField] Sprite normalSprite;
 
-    Vector2 bottomOfFlag = new Vector2(-0.39f, -2.1f);
-    Vector2 endingDoor = new Vector2 (3.0f, -2.1f);
+    [SerializeField] GameObject gameController;
+    AudioController audioController;
+
+    Vector2 bottomOfFlag = new Vector2(189f, -1.3f);
+    Vector2 endingDoor = new Vector2 (195.5f, -2.5f);
 
     const float flagTime = 1.0f;
     Tween flagTween;
@@ -23,6 +26,7 @@ public class FlagEnding : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioController = gameController.GetComponent<AudioController>();
         flagLength = Vector2.Distance(transform.position, bottomOfFlag);
         TriggerFlagEnding();
     }
@@ -68,13 +72,18 @@ public class FlagEnding : MonoBehaviour
     }
 
     public void TriggerFlagEnding() {
+        audioController.StopMusic();
+        audioController.PlaySound("Stage Clear");
+
+        player.GetComponent<DummyController>().enabled = false;
         player.GetComponent<SpriteRenderer>().sprite = slideSprite;
+
         AddFlagTween();
         AddMarioFlagTween();
     }
 
     IEnumerator TriggerMarioMovement() {
-        player.transform.position = new Vector2(0.33f, player.transform.position.y);
+        player.transform.position = new Vector2(190f, player.transform.position.y);
         player.transform.rotation = Quaternion.Euler(0, 180, 0);
 
         yield return new WaitForSeconds(1);

@@ -57,7 +57,7 @@ public class PlayerState : MonoBehaviour
     }
 
     public void TriggerDeath(bool playDeathAnim) {
-        
+
         audioController.StopMusic();
         audioController.PlaySound("Death");
         player.GetComponent<DummyController>().enabled = false;
@@ -76,7 +76,7 @@ public class PlayerState : MonoBehaviour
     }
 
     public void TriggerRespawn() {
-
+        Debug.Log("Triggering...respawn?");
         deathSeq = false;
         deathTimer = deathLength;
 
