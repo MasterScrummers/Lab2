@@ -15,18 +15,17 @@ public class Downgrade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Change();
+        
     }
     void Change()
     {
-        if (Input.GetKeyDown(KeyCode.U))
-        {
+
             if (gameObject.tag == "Mario_Big")
             {
                 animator.Play("Downgrade_to_SmallMario");
                 StartCoroutine(DestoryTimer());
             }
-        }
+
     }
 
     IEnumerator DestoryTimer()
@@ -36,5 +35,13 @@ public class Downgrade : MonoBehaviour
         Transform spawnTransform = gameObject.GetComponent<Transform>();
         Instantiate(prefab, new Vector3(spawnTransform.position.x, spawnTransform.position.y + 1, spawnTransform.position.z), Quaternion.identity);
         Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            Change();
+        }
     }
 }

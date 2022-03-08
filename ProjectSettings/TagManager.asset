@@ -11,6 +11,7 @@ TagManager:
   - foot
   - Mario_Big
   - FireFlower
+  - Hurtbox
   layers:
   - Default
   - TransparentFX
