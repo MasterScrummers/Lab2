@@ -28,38 +28,32 @@ TagManager:
   - Ground
   - Powerup
   - Enemy
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 1473287643
+    uniqueID: 583040931
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Player
-    uniqueID: 2550073845
-    locked: 0
-  - name: UI
-    uniqueID: 2867001295
     locked: 0

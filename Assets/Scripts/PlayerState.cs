@@ -1,19 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerState : MonoBehaviour
 {
-    [SerializeField] GameObject player;
-    Rigidbody2D playerRigidbody2D;
+    private GameObject player;
+    private GameObject gameController;
+    private Rigidbody2D playerRigidbody2D;
 
     [SerializeField] GameObject playerPrefab;
-
     [SerializeField] Sprite deathSprite;
 
-    [SerializeField] GameObject gameController;
-    VariableController varController;
-    AudioController audioController;
+    private VariableController varController;
+    private AudioController audioController;
 
     Vector3 playerStartPos = new Vector3(-8.38f, -2.56f);
 
@@ -22,21 +19,19 @@ public class PlayerState : MonoBehaviour
     bool deathSeq;
     
     int currentLives;
-
-    void Awake() 
-    {
-        playerRigidbody2D = player.GetComponent<Rigidbody2D>();
-    }
     
     // Start is called before the first frame update
     void Start()
     {
+        player = DoStatic.GetPlayer();
+        playerRigidbody2D = player.GetComponent<Rigidbody2D>();
+
+        gameController = DoStatic.GetGameController();
         varController = gameController.GetComponent<VariableController>();
         audioController = gameController.GetComponent<AudioController>();
 
         deathSeq = false;
         deathTimer = deathLength;
-
         currentLives = varController.ResetLives();
     }
 
@@ -76,7 +71,6 @@ public class PlayerState : MonoBehaviour
     }
 
     public void TriggerRespawn() {
-        Debug.Log("Triggering...respawn?");
         deathSeq = false;
         deathTimer = deathLength;
 

@@ -35,8 +35,17 @@ public class DoStatic
         return children.ToArray();
     }
 
+    private static GameObject GetObject(string tag)
+    {
+        return GameObject.FindGameObjectWithTag(tag);
+    }
+
     public static GameObject GetGameController()
     {
-        return GameObject.FindGameObjectWithTag("GameController");
+        return GetObject("GameController");
+    }
+    public static GameObject GetPlayer()
+    {
+        return GetObject("Player");
     }
 }

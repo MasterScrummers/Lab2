@@ -23,7 +23,6 @@ public class SceneController : MonoBehaviour
         {
             case "Overworld":
                 audioController.PlayMusic("Overworld");
-                Debug.Log("Starting again");
                 cam.backgroundColor = DoStatic.RGBConverter(92, 148, 252);
                 return;
 
