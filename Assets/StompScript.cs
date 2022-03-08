@@ -20,11 +20,15 @@ public class StompScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 400));
-            DeathSequence();
+            
         }
     }
 
+    public void StompSequence()
+    {
+        Debug.Log("Hit");
+        DeathSequence();
+    }
     void DeathSequence()
     {
         Destroy(transform.parent.gameObject);
