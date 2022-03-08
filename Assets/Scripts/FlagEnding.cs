@@ -28,7 +28,7 @@ public class FlagEnding : MonoBehaviour
     {
         audioController = gameController.GetComponent<AudioController>();
         flagLength = Vector2.Distance(transform.position, bottomOfFlag);
-        TriggerFlagEnding();
+        //TriggerFlagEnding();
     }
 
     // Update is called once per frame

@@ -34,4 +34,9 @@ public class DoStatic
         }
         return children.ToArray();
     }
+
+    public static GameObject GetGameController()
+    {
+        return GameObject.FindGameObjectWithTag("GameController");
+    }
 }
