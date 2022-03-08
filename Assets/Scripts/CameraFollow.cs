@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour
         threshold = calculateThreshold();
         Rect aspect = Camera.main.pixelRect; //camera aspect ratio
         camDimensions = new Vector2(Camera.main.orthographicSize * aspect.width / aspect.height, Camera.main.orthographicSize);
-        boundaryPos.x = -camDimensions.x;
+        boundaryPos.x = transform.position.x - camDimensions.x;
         leftBoundary.transform.position = boundaryPos;
         rb = followObject.GetComponent<Rigidbody2D>();
     }
