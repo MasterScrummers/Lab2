@@ -12,6 +12,9 @@ TagManager:
   - deathrespawncontroller
   - fallingBoundary
   - flagPole
+  - Mario_Big
+  - FireFlower
+  - Hurtbox
   layers:
   - Default
   - TransparentFX
@@ -20,31 +23,31 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Powerup
+  - Enemy
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
   m_SortingLayers:
   - name: Background
     uniqueID: 1473287643
