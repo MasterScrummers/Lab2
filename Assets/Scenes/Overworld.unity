@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 379136712}
   - component: {fileID: 379136714}
   - component: {fileID: 379136715}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Coin Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8412,7 +8412,7 @@ GameObject:
   - component: {fileID: 732294853}
   - component: {fileID: 732294855}
   - component: {fileID: 732294856}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8877,6 +8877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f57993feabb34d498cc12d7adedc4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedBlockSprite: {fileID: 0}
 --- !u!1 &904092608
 GameObject:
   m_ObjectHideFlags: 0

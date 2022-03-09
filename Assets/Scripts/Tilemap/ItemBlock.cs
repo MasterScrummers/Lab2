@@ -8,6 +8,7 @@ public class ItemBlock : BlockBase
     {
         if (UpdateTileBlock(tilePos))
         {
+            tilePos.y++;
             Instantiate(item, tilemap.CellToWorld(tilePos), Quaternion.identity);
             audioController.PlaySound("Powerup Appears");
         }

@@ -2,15 +2,18 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(PlayerMovement))]
 public class MarioSpriteUpdator : MonoBehaviour
 {
     private Animator animator;
     private SpriteRenderer sprite;
 
     private InputController input;
-    private AudioController audio;
+    private AudioController audioController;
     private PlayerState playerState;
+    private PlayerMovement movement;
     public int PowerState = 0;
+
 
     private BoxCollider2D head;
 
@@ -22,8 +25,9 @@ public class MarioSpriteUpdator : MonoBehaviour
 
         GameObject controller = DoStatic.GetGameController();
         input = controller.GetComponent<InputController>();
-        audio = controller.GetComponent<AudioController>();
+        audioController = controller.GetComponent<AudioController>();
         playerState = controller.GetComponent<PlayerState>();
+        movement = GetComponent<PlayerMovement>();
 
         head = GameObject.FindGameObjectWithTag("head").GetComponent<BoxCollider2D>();
         UpdateCollider();
@@ -33,8 +37,8 @@ public class MarioSpriteUpdator : MonoBehaviour
     {
         animator.SetBool("IsCrouching", input.vertical < 0);
         animator.SetBool("IsMoving", input.horizontal != 0);
+        animator.SetBool("IsJumping", !movement.isOnGround);
         animator.SetInteger("PowerState", PowerState);
-
 
         if (input.horizontal != 0)
         {
@@ -89,11 +93,11 @@ public class MarioSpriteUpdator : MonoBehaviour
 
     private void PowerUp()
     {
-        audio.PlaySound("Powerup");
+        audioController.PlaySound("Powerup");
     }
 
     private void Hurt()
     {
-        audio.PlaySound("Pipe Travel");
+        audioController.PlaySound("Pipe Travel");
     }
 }
