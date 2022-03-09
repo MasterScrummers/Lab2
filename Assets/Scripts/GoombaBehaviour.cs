@@ -47,6 +47,11 @@ public class GoombaBehaviour : MonoBehaviour
             Destroy(GetComponentInParent<Rigidbody2D>());
             StartCoroutine(DeathAnimation());
         }
+
+        if (collision.tag == "FireBall")
+        {
+            Destroy(gameObject);
+        }
     }
 
     IEnumerator DeathAnimation()
