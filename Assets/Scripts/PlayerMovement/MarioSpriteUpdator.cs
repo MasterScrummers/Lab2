@@ -8,6 +8,7 @@ public class MarioSpriteUpdator : MonoBehaviour
     private SpriteRenderer sprite;
 
     private InputController input;
+    private AudioController audio;
     private PlayerState playerState;
     public int PowerState = 0;
 
@@ -18,8 +19,12 @@ public class MarioSpriteUpdator : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        input = DoStatic.GetGameController().GetComponent<InputController>();
-        playerState = DoStatic.GetGameController().GetComponent<PlayerState>();
+        movement = GetComponent<PlayerMovement>();
+
+        GameObject controller = DoStatic.GetGameController();
+        input = controller.GetComponent<InputController>();
+        audio = controller.GetComponent<AudioController>();
+        playerState = controller.GetComponent<PlayerState>();
 
         head = GameObject.FindGameObjectWithTag("head").GetComponent<BoxCollider2D>();
         UpdateCollider();
@@ -81,5 +86,15 @@ public class MarioSpriteUpdator : MonoBehaviour
         Vector2 headOffset = head.offset;
         headOffset.y = bc.size.y;
         head.offset = headOffset;
+    }
+
+    private void PlayPowerUp()
+    {
+        audio.PlaySound("Powerup");
+    }
+
+    private void PlayHurt()
+    {
+        audio.PlaySound("Pipe Travel");
     }
 }

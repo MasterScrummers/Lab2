@@ -36,12 +36,17 @@ public abstract class BlockBase : MonoBehaviour
                 return;
             }
 
-            Tile colBlock = (Tile)tilemap.GetTile(cellPosition);
-            if (colBlock != usedBlockSprite)
-            {
-                tilemap.SetTile(cellPosition, usedBlockSprite);
-                Effect();
-            }
+            Effect(cellPosition);
         }
+    }
+
+    protected bool UpdateTileBlock(Vector3Int tilePos)
+    {
+        if ((Tile)tilemap.GetTile(tilePos) != usedBlockSprite)
+        {
+            tilemap.SetTile(tilePos, usedBlockSprite);
+            return true;
+        }
+        return false;
     }
 }

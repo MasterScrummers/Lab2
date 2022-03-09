@@ -20,13 +20,11 @@ public class PlayerMovement : MonoBehaviour
     public float radius; //the float groundCheckRadius allows you to set a radius for the groundCheck, to adjust the way you interact with the ground*/
 
     private Rigidbody2D rb;
-    private Animator animator;
     private InputController input;
 
     void Start()
     {
         jumpTimeCounter = jumpTime; //Set Max jump time = counter
-        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         input = DoStatic.GetGameController().GetComponent<InputController>();
     }

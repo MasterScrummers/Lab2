@@ -6,7 +6,10 @@ public class CoinBlock : BlockBase
 {
     protected override void Effect()
     {
-        varController.coins++;
-        audioController.PlaySound("Coin");
+        if (UpdateTileBlock(tilePos))
+        {
+            varController.coins++;
+            audioController.PlaySound("Coin");
+        }
     }
 }
