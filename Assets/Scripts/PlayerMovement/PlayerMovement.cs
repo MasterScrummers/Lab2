@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpTime;  //Maxmium Time on air
     public float jumpTimeCounter; //Counter for JumpTime
 
-    public bool grounded; //boolean to define if the player is on the ground or not
+    public bool isOnGround; //boolean to define if the player is on the ground or not
     public LayerMask Ground; //A LayerMask which defines what is ground object
     public bool stoppedJumping = true; //Boolean to define if the player stops jumping
 
@@ -56,20 +56,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        grounded = Physics2D.OverlapCircle(bottom.position, radius, Ground); //Physics2D.OverlapCircle returns true if the bottom circle collide with the ground layerMask.
-        if (grounded)
+        isOnGround = Physics2D.OverlapCircle(bottom.position, radius, Ground); //Physics2D.OverlapCircle returns true if the bottom circle collide with the ground layerMask.
+        if (isOnGround)
         {
             jumpTimeCounter = jumpTime; //Reset Jump Counter
-            animator.SetBool("IsJumping", false);
         }
 
         // If (Player Press the space bar or w) And Mario is on the ground
-        if ((input.jump || input.vertical > 0) && grounded)
+        if ((input.jump || input.vertical > 0) && isOnGround)
         {
             //Then Jump
             rb.velocity = new Vector2(rb.velocity.x, jumpForce) ;
             stoppedJumping = false;
-            animator.SetBool("IsJumping", true);
         }
 
         //If Player is holding space bar
@@ -81,7 +79,6 @@ public class PlayerMovement : MonoBehaviour
                 //Jump Higher, at the same time start the counter
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 jumpTimeCounter -= Time.deltaTime;
-                animator.SetBool("IsJumping", true);
             }
         }
 

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1070300175252897317}
   - component: {fileID: 6985818543319787860}
   m_Layer: 0
-  m_Name: Mario_Small
+  m_Name: Mario
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,10 +138,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 9
+  jumpForce: 9.25
   jumpTime: 0.5
   jumpTimeCounter: 0.5
-  grounded: 0
+  isOnGround: 0
   Ground:
     serializedVersion: 2
     m_Bits: 128

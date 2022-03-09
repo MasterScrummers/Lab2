@@ -860,13 +860,97 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flag
+      name: Turtle_01
       rect:
         serializedVersion: 2
-        x: 432
-        y: 1152
+        x: 481
+        y: 413
         width: 16
-        height: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6effdb70b7f3074083722a733ea679e
+      internalID: 171601336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turtle_02
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 412
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9664b4b9064b2554ea8a67d288168685
+      internalID: -104585829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turtle_Shell_01
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 413
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0723330dceafa4d4fa418f6de9f04baf
+      internalID: -1314225095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turtle_Shell_02
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 413
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0072e4863afb77e45937a54937ec4625
+      internalID: -136419239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_00
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1059
+        width: 10
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -874,8 +958,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe0d4e127b2920444a6ff642f6962c50
-      internalID: -1288285105
+      spriteID: 383ea2aab0ce1a84f8c6c8fff2c19600
+      internalID: 1808826296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_01
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1059
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9662198a6b8dcd438fe285b0940ec8f
+      internalID: 899960803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_02
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1059
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfadd299c3b39424f9ae2ed7ebd108c9
+      internalID: 1049506269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_Flip_00
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1093
+        width: 1
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734f0fc6eb719b34f958422303b03abc
+      internalID: -2061474394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_Flip_01
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1093
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1159ba1c74b549343a927644e17ba605
+      internalID: 1702725027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_Flip_02
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1093
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbf7042fd3c12340bd66e1aa0d1940e
+      internalID: -347094247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin_Flip_03
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1093
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c7ef5217d86a842aa3c4079e8f75a0
+      internalID: 458095077
       vertices: []
       indices: 
       edges: []
@@ -892,32 +1102,24 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Small_Mario_Jump: -1366300417
-      Big_Mario_Idle: 1310059616
-      Flag: -1302689684
-      Fireflower_Mario_Quick_Turn: 661617625
-      Fireflower_Mario_Run_1: 1323928153
-      Big_Mario_Run_2: -1456061611
+      Turtle_01: -1302689684
       Fireflower_Mario_Attack: -1630432268
       Fireflower_3: 622738055
       Small_Mario_Idle: 912523461
       Big_Mario_Run_1: 16778990
       Fireflower_2: 725812332
       Mario_Pole_Slide_1: 756808564
-      Mario_Pole_Slide_0: -133197455
-      Big_Mario_Crouch: -388509412
-      Fireflower_Mario_Run_0: -1602486854
+      Coin_00: 1808826296
       Fireflower_Mario_Run_2: -1393195399
-      Big_Mario_Run_0: 1622202132
+      Turtle_Shell_02: -136419239
       Fireflower_Mario_Crouch: 1316010831
-      Fireflower_Mario_Jump: -1484181788
-      SMB1_Spritesheet_1: -413238444
       Gooma_Idle: -1233725993
       Fireflower_0: -544517673
       Star_0: 475462455
-      Big_Mario_Jump: -1470457607
-      Fireflower_Mario_Idle: 1861611467
+      Coin_Flip_01: 1702725027
+      Turtle_02: -413238444
+      Turtle_Shell_01: -1314225095
       Big_Mario_Quick_Turn: -894605913
-      Small_Mario_Run_0: -1366300417
       1Up: -996091554
       Star_3: 1610030134
       Powerup: -976168957
@@ -926,9 +1128,26 @@ TextureImporter:
       Star_2: -1247576648
       Small_Mario_Run_1: -1366300417
       Star_1: -770724617
-      Small_Mario_Run_2: 203528216
       Goomba_Death: -964177110
       Death: 1413532066
+      Big_Mario_Idle: 1310059616
+      Fireflower_Mario_Quick_Turn: 661617625
+      Fireflower_Mario_Run_1: 1323928153
+      Big_Mario_Run_2: -1456061611
+      Mario_Pole_Slide_0: -133197455
+      Big_Mario_Crouch: -388509412
+      Fireflower_Mario_Run_0: -1602486854
+      Fireflower_Mario_Jump: -1484181788
+      Big_Mario_Run_0: 1622202132
+      Fireflower_Mario_Idle: 1861611467
+      Big_Mario_Jump: -1470457607
+      Coin_Flip_02: -347094247
+      Small_Mario_Run_0: -1366300417
+      Coin_02: 1049506269
+      Coin_Flip_03: 458095077
+      Coin_01: 899960803
+      Coin_Flip_00: -2061474394
+      Small_Mario_Run_2: 203528216
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
