@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 9
+  jumpForce: 9.25
   jumpTime: 0.5
   jumpTimeCounter: 0.5
   grounded: 0
