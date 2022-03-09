@@ -53,15 +53,15 @@ public class MarioSpriteUpdator : MonoBehaviour
         }
     }
 
-    public void ChangePowerState(int amount)
+    public void setPowerState(int amount)
     {
-        if (amount < 0 && PowerState == 0)
+        if (amount == 0 && PowerState == 0)
         {
             animator.SetTrigger("Death");
             playerState.TriggerDeath(true);
         } else
         {
-            PowerState = Mathf.Clamp(PowerState + amount, 0, 2);
+            PowerState = amount;
         }
     }
 

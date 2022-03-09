@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     public bool stoppedJumping = true; //Boolean to define if the player stops jumping
 
     public Transform bottom; //Mario's feet, to check if it is colliding with the ground
-    public Transform top; //Mario's head
     public float radius; //the float groundCheckRadius allows you to set a radius for the groundCheck, to adjust the way you interact with the ground*/
 
     private Rigidbody2D rb;
@@ -48,7 +47,10 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 currentVelocity = rb.velocity;
         currentVelocity.x = Mathf.Clamp(currentVelocity.x + hDirection, -speed, speed);
+        currentVelocity.y = currentVelocity.y > 10 ? 10 : currentVelocity.y;
         rb.velocity = currentVelocity;
+
+        
     }
 
     void Jump()
@@ -63,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         if ((input.jump || input.vertical > 0) && isOnGround)
         {
             //Then Jump
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce) ;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             stoppedJumping = false;
         }
 
@@ -97,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.DrawSphere(bottom.position, radius);
-        Gizmos.DrawSphere(top.position, radius);
     }      
               
 }
