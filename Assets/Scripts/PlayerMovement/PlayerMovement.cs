@@ -86,6 +86,12 @@ public class PlayerMovement : MonoBehaviour
             jumpTimeCounter = 0;
             stoppedJumping = true;
         }
+
+        rb.gravityScale = 1;
+        if (!isOnGround)
+        {
+            rb.gravityScale = rb.velocity.y > 3 ? 1 : 5;
+        }
     }
 
     void OnDrawGizmos()

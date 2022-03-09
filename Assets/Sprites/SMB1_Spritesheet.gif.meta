@@ -871,7 +871,7 @@ TextureImporter:
         width: 16
         height: 0
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -883,10 +883,157 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: fire_0
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 299
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34092a0ee68e6004eb494658867feddd
+      internalID: 698558119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 299
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687de0aeb85293e4397ddd610227f224
+      internalID: -1859812022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 299
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca04f30bc8bed2a4aa262fd41fc5d2f7
+      internalID: -2055192605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_3
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 299
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10a8ed9b5392fd4bab51fe8701005fd
+      internalID: 763066471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_0
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a254b8d4353a0104ba730c147166202f
+      internalID: -1484820087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 295
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec97da213a2f24a4a98fb264734e1c51
+      internalID: 2075160312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_2
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 294
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ff3de7653b9db43a350305ee24b1ff
+      internalID: -1773401282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f8afb91651f744946813d79e67815274
     internalID: 0
     vertices: []
     indices: 
@@ -895,30 +1042,19 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Small_Mario_Jump: -1366300417
-      Big_Mario_Idle: 1310059616
-      Flag: 4445140817576949097
-      Fireflower_Mario_Quick_Turn: 661617625
-      Fireflower_Mario_Run_1: 1323928153
-      Big_Mario_Run_2: -1456061611
+      fire_2: -2055192605
       Fireflower_Mario_Attack: -1630432268
       Fireflower_3: 622738055
       Small_Mario_Idle: 912523461
       Big_Mario_Run_1: 16778990
       Fireflower_2: 725812332
       Mario_Pole_Slide_1: 756808564
-      Mario_Pole_Slide_0: -133197455
-      Big_Mario_Crouch: -388509412
-      Fireflower_Mario_Run_0: -1602486854
       Fireflower_Mario_Run_2: -1393195399
-      Big_Mario_Run_0: 1622202132
       Fireflower_Mario_Crouch: 1316010831
-      Fireflower_Mario_Jump: -1484181788
+      explosion_1: 2075160312
       Gooma_Idle: -1233725993
       Fireflower_0: -544517673
       Star_0: 475462455
-      Big_Mario_Jump: -1470457607
-      Fireflower_Mario_Idle: 1861611467
-      Small_Mario_Run_0: 203528216
       Big_Mario_Quick_Turn: -894605913
       1Up: -996091554
       Star_3: 1610030134
@@ -928,9 +1064,27 @@ TextureImporter:
       Star_2: -1247576648
       Small_Mario_Run_1: 200746463
       Star_1: -770724617
-      Small_Mario_Run_2: 1980082606
+      fire_3: 763066471
       Goomba_Death: -964177110
       Death: 1413532066
+      Big_Mario_Idle: 1310059616
+      explosion_2: -1773401282
+      Flag: 4445140817576949097
+      Fireflower_Mario_Quick_Turn: 661617625
+      explosion_0: -1484820087
+      Fireflower_Mario_Run_1: 1323928153
+      Big_Mario_Run_2: -1456061611
+      Mario_Pole_Slide_0: -133197455
+      Big_Mario_Crouch: -388509412
+      Fireflower_Mario_Run_0: -1602486854
+      Fireflower_Mario_Jump: -1484181788
+      Big_Mario_Run_0: 1622202132
+      fire_0: 698558119
+      Fireflower_Mario_Idle: 1861611467
+      Big_Mario_Jump: -1470457607
+      fire_1: -1859812022
+      Small_Mario_Run_0: 203528216
+      Small_Mario_Run_2: 1980082606
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

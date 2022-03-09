@@ -151,11 +151,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6167411633373408703, guid: de3a71917e948684f92b1cf10f897760, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3806925
+      value: 24.19
       objectReference: {fileID: 0}
     - target: {fileID: 6167411633373408703, guid: de3a71917e948684f92b1cf10f897760, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7051027
+      value: -2.01
       objectReference: {fileID: 0}
     - target: {fileID: 6167411633373408703, guid: de3a71917e948684f92b1cf10f897760, type: 3}
       propertyPath: m_LocalPosition.z
@@ -227,6 +227,8 @@ GameObject:
   - component: {fileID: 379136712}
   - component: {fileID: 379136714}
   - component: {fileID: 379136715}
+  - component: {fileID: 379136717}
+  - component: {fileID: 379136716}
   m_Layer: 7
   m_Name: Coin Blocks
   m_TagString: Untagged
@@ -511,8 +513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
-<<<<<<< Updated upstream
-=======
 --- !u!66 &379136716
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -683,7 +683,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3665712134210286933, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
   m_PrefabInstance: {fileID: 1986753433}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &463759746
 GameObject:
   m_ObjectHideFlags: 0
@@ -12298,7 +12297,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1249449743
@@ -12974,11 +12973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
-      value: 0
-=======
       value: -4.55
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.y
