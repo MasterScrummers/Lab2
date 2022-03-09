@@ -59,8 +59,9 @@ public class PlayerMovement : MonoBehaviour
         if (input.vertical != -1)
         {
             float forward = input.horizontal;
+            rb.AddForce(new Vector2(forward, 0), ForceMode2D.Impulse);
             Vector2 currentVelocity = rb.velocity;
-            currentVelocity.x = Mathf.Clamp(currentVelocity.x + forward, -speed, speed);
+            currentVelocity.x = Mathf.Clamp(currentVelocity.x, -speed, speed);
             rb.velocity = currentVelocity;
         }
     }

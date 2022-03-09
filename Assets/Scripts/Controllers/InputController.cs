@@ -9,6 +9,6 @@ public class InputController : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
-        jump = Input.GetButton("Jump");
+        jump = Input.GetButtonDown("Jump");
     }
 }

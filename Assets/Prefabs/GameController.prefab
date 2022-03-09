@@ -787,7 +787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followObject: {fileID: 0}
   leftBoundary: {fileID: 8060661286887571330}
-  followOffset: {x: 11, y: 3}
+  followOffset: {x: 11, y: 0}
   speed: 3
 --- !u!1001 &2362125284530171510
 PrefabInstance:

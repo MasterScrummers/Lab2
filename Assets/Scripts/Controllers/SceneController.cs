@@ -46,7 +46,10 @@ public class SceneController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         currentScene = DoStatic.GetSceneName();
+
         player.position = setPlayerPosition;
+        setPlayerPosition.z = -10;
+        GetComponentInChildren<Camera>().gameObject.transform.position = setPlayerPosition;
         DoSceneStartUp();
     }
 }

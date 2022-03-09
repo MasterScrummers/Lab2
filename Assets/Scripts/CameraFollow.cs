@@ -17,6 +17,11 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Vector3 followObjPos = followObject.transform.position;
+        followObjPos.y = 2;
+        followObjPos.z = -10;
+        transform.position = followObjPos;
+
         threshold = calculateThreshold();
         Rect aspect = Camera.main.pixelRect; //camera aspect ratio
         camDimensions = new Vector2(Camera.main.orthographicSize * aspect.width / aspect.height, Camera.main.orthographicSize);
