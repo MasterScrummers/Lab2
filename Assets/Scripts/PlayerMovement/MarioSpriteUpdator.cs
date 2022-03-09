@@ -30,6 +30,11 @@ public class MarioSpriteUpdator : MonoBehaviour
         {
             sprite.flipX = input.horizontal < 0;
         }
+
+        if (PowerState == 2 && Input.GetButtonDown("Attack"))
+        {
+            animator.SetTrigger("Attack");
+        }
     }
 
     public void ChangePowerState(int amount)
