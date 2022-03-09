@@ -2,10 +2,12 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(PlayerMovement))]
 public class MarioSpriteUpdator : MonoBehaviour
 {
     private Animator animator;
     private SpriteRenderer sprite;
+    private PlayerMovement movement;
 
     private InputController input;
     private PlayerState playerState;
@@ -18,6 +20,7 @@ public class MarioSpriteUpdator : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        movement = GetComponent<PlayerMovement>();
         input = DoStatic.GetGameController().GetComponent<InputController>();
         playerState = DoStatic.GetGameController().GetComponent<PlayerState>();
 
@@ -30,7 +33,7 @@ public class MarioSpriteUpdator : MonoBehaviour
         animator.SetBool("IsCrouching", input.vertical < 0);
         animator.SetBool("IsMoving", input.horizontal != 0);
         animator.SetInteger("PowerState", PowerState);
-
+        animator.SetBool("IsJumping", !movement.isOnGround);
 
         if (input.horizontal != 0)
         {

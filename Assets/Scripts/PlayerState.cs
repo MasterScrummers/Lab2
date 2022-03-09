@@ -49,7 +49,7 @@ public class PlayerState : MonoBehaviour
         }
     }
 
-    public async void TriggerDeath(bool playDeathAnim) {
+    public void TriggerDeath(bool playDeathAnim) {
 
         audioController.StopMusic();
         audioController.PlaySound("Death");

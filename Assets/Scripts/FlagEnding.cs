@@ -74,7 +74,7 @@ public class FlagEnding : MonoBehaviour
         audioController.StopMusic();
         audioController.PlaySound("Stage Clear");
 
-        player.GetComponent<DummyController>().enabled = false;
+        //player.GetComponent<DummyController>().enabled = false;
         player.GetComponent<SpriteRenderer>().sprite = slideSprite;
 
         AddFlagTween();
