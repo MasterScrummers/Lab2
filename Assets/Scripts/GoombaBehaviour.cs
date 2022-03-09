@@ -1,8 +1,8 @@
 using System.Collections;
 using UnityEngine;
 
+//Do not require RigidBody2D
 [RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(Rigidbody2D))]
 public class GoombaBehaviour : MonoBehaviour
 {
     public int direction = -1;
