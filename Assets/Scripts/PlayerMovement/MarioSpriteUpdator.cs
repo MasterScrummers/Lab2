@@ -88,12 +88,17 @@ public class MarioSpriteUpdator : MonoBehaviour
         //size = Re-added Box Collider's size
         Vector2 size = bc.size;
 
-        //
+        //Reduce the size the collider by 80%, so it will be the same in the orginal game
         size.x *= 0.8f;
         bc.size = size;
 
+        //Ref to head's offset
         Vector2 headOffset = head.offset;
+
+        //headOffset will always be placed on top of the collider,
         headOffset.y = bc.size.y;
+
+        //Apply headOffset to actual collider, so that it will change accordingly
         head.offset = headOffset;
     }
 }
