@@ -3,11 +3,10 @@ using UnityEngine;
 public class PlayerState : MonoBehaviour
 {
     private GameObject player;
-    private GameObject gameController;
     private Rigidbody2D playerRigidbody2D;
 
-    [SerializeField] GameObject playerPrefab;
-    [SerializeField] Sprite deathSprite;
+    // [SerializeField] GameObject playerPrefab;
+    // [SerializeField] Sprite deathSprite;
 
     private VariableController varController;
     private AudioController audioController;
@@ -26,9 +25,8 @@ public class PlayerState : MonoBehaviour
         player = DoStatic.GetPlayer();
         playerRigidbody2D = player.GetComponent<Rigidbody2D>();
 
-        gameController = DoStatic.GetGameController();
-        varController = gameController.GetComponent<VariableController>();
-        audioController = gameController.GetComponent<AudioController>();
+        varController = GetComponent<VariableController>();
+        audioController = GetComponent<AudioController>();
 
         deathSeq = false;
         deathTimer = deathLength;
@@ -51,13 +49,20 @@ public class PlayerState : MonoBehaviour
         }
     }
 
-    public void TriggerDeath(bool playDeathAnim) {
+    public async void TriggerDeath(bool playDeathAnim) {
 
         audioController.StopMusic();
         audioController.PlaySound("Death");
-        player.GetComponent<DummyController>().enabled = false;
+
+        player.GetComponent<PlayerMovement>().enabled = false;
+        player.GetComponent<MarioSpriteUpdator>().enabled = false;
+
+        Transform[] children = DoStatic.GetChildren(player.transform);
+        foreach (Transform child in children) {
+            child.GetComponent<BoxCollider2D>().enabled = false;
+        }
+
         deathSeq = true;
-        player.GetComponent<SpriteRenderer>().sprite = deathSprite;
 
         if (playDeathAnim)
         {
@@ -66,8 +71,10 @@ public class PlayerState : MonoBehaviour
     }
 
     void StartDeathAnim() {
-        playerRigidbody2D.AddForce(new Vector2(0f, 400));
         player.GetComponent<BoxCollider2D>().enabled = false;
+        playerRigidbody2D.velocity = Vector2.zero;
+        playerRigidbody2D.angularVelocity = 0f;
+        playerRigidbody2D.AddForce(new Vector2(0f, 400));
     }
 
     public void TriggerRespawn() {
@@ -75,10 +82,18 @@ public class PlayerState : MonoBehaviour
         deathTimer = deathLength;
 
         player.GetComponent<BoxCollider2D>().enabled = true;
-        player.GetComponent<DummyController>().enabled = true;
+        player.GetComponent<PlayerMovement>().enabled = true;
+        player.GetComponent<MarioSpriteUpdator>().enabled = true;
 
-        gameController.GetComponent<SceneController>().ChangeScene("Overworld", playerStartPos);
-        //change sprite back to normal mario
+        Transform[] children = DoStatic.GetChildren(player.transform);
+        foreach (Transform child in children) {
+            child.GetComponent<BoxCollider2D>().enabled = true;
+        }
+
+        player.GetComponent<MarioSpriteUpdator>().Respawn();
+
+        GetComponent<SceneController>().ChangeScene("Overworld", playerStartPos);
+
         currentLives = varController.DecrementLife();
     }
 
