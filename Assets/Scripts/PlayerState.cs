@@ -99,8 +99,11 @@ public class PlayerState : MonoBehaviour
         player.GetComponent<MarioSpriteUpdator>().enabled = enable;
 
         Transform[] children = DoStatic.GetChildren(player.transform);
+        
         foreach (Transform child in children) {
-            child.GetComponent<BoxCollider2D>().enabled = enable;
+            if (child.TryGetComponent<BoxCollider2D>(out BoxCollider2D box)) {
+                box.enabled = enable;
+            }
         }
     }
 }
