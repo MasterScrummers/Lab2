@@ -5,8 +5,7 @@ public class PlayerState : MonoBehaviour
     private GameObject player;
     private Rigidbody2D playerRigidbody2D;
 
-    // [SerializeField] GameObject playerPrefab;
-    // [SerializeField] Sprite deathSprite;
+    [SerializeField] UITimer timer;
 
     private VariableController varController;
     private AudioController audioController;
@@ -51,6 +50,7 @@ public class PlayerState : MonoBehaviour
 
     public void TriggerDeath(bool playDeathAnim) {
 
+        timer.PauseTimer(true);
         audioController.StopMusic();
         audioController.PlaySound("Death");
 
@@ -83,6 +83,8 @@ public class PlayerState : MonoBehaviour
 
         GetComponent<SceneController>().ChangeScene("Overworld", playerStartPos);
 
+        timer.ResetTimer();
+        timer.PauseTimer(false);
         currentLives = varController.DecrementLife();
     }
 

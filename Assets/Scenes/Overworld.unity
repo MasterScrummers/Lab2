@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &136318694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2968286549435840777, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
+  m_PrefabInstance: {fileID: 2968286547963270877}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828f7a09f7a2b7243be8ac4824b79608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &144805644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -202,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9976f7c279ab6674da6f4f5aae9b545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 136318694}
 --- !u!1 &379136710
 GameObject:
   m_ObjectHideFlags: 0
@@ -12689,6 +12701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flag: {fileID: 1249449741}
+  timer: {fileID: 136318694}
 --- !u!1 &1798125569
 GameObject:
   m_ObjectHideFlags: 0
@@ -12767,6 +12780,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897319, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070300175252897319, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: grounded
       value: 0
       objectReference: {fileID: 0}
@@ -12784,11 +12801,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13210,6 +13227,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2968286548113052631, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
+      propertyPath: audioClips.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968286548113052631, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
+      propertyPath: audioClips.Array.data[17]
+      value: 
+      objectReference: {fileID: 8300000, guid: 796f769434e079b4995da414fcf1410e, type: 3}
     - target: {fileID: 2968286548113052632, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
       propertyPath: m_Name
       value: GameController

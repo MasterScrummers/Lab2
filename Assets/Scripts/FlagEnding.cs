@@ -9,6 +9,7 @@ public class FlagEnding : MonoBehaviour
 
     GameObject gameController;
     AudioController audioController;
+    [SerializeField] UITimer timer;
     GameObject mainCamera;
 
     Vector2 bottomOfFlag = new Vector2(189f, -1.3f);
@@ -85,8 +86,9 @@ public class FlagEnding : MonoBehaviour
     }
 
     public void TriggerFlagEnding() {
-        audioController.StopMusic();
-        audioController.PlaySound("Stage Clear");
+        
+        StartCoroutine(PlayMusic());
+        timer.PauseTimer(true);
 
         player.GetComponent<MarioSpriteUpdator>().enabled = false;
         player.GetComponent<PlayerMovement>().enabled = false;
@@ -113,6 +115,17 @@ public class FlagEnding : MonoBehaviour
         player.transform.rotation = Quaternion.identity;
         player.GetComponent<Animator>().Play("Base Layer.Cutscene Walk.Small_Mario_Walking", 0);
         marioWalk = true;
+
+        yield break;
+    }
+
+    IEnumerator PlayMusic() {
+        audioController.StopMusic();
+        audioController.PlaySound("Flagpole");
+
+        yield return new WaitForSeconds(1.172f);
+
+        audioController.PlaySound("Stage Clear");
 
         yield break;
     }
