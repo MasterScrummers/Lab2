@@ -67,6 +67,12 @@ public class MarioSpriteUpdator : MonoBehaviour
         animator.SetTrigger("Respawn");
     }
 
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("fallingBoundary")) {
+            playerState.TriggerDeath(false);
+        }
+    }
+
     /// <summary>
     /// This is used according to the animation.
     /// </summary>

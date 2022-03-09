@@ -13,6 +13,8 @@ public class UITimer : UICounter
         counterName = "TIME";
         remainingTime = startTime;
         prevValue = (int)remainingTime + 1;
+
+        pauseTimer = false;
     }
 
     void Update()
@@ -36,7 +38,8 @@ public class UITimer : UICounter
     }
 
     public void ResetTimer() {
-        remainingTime = startTime;
+        remainingTime = startTime + 1;
+        prevValue = (int)remainingTime + 1;
     }
 
     public void PauseTimer (bool pause) {
