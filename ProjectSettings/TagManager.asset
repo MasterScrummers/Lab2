@@ -31,7 +31,7 @@ TagManager:
   - Ground
   - Powerup
   - Enemy
-  - 
+  - Coins
   - 
   - 
   - 
@@ -59,4 +59,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 3204617085
     locked: 0

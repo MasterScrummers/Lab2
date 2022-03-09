@@ -4,14 +4,22 @@ public class CoinFloat : BlockBase
 {
     protected override void OnCollisionEnter2D(Collision2D col) {}
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D col)
     {
-        if (!collision.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Player"))
         {
-            return;
-        }
+            Vector3Int cellPosition = tilemap.WorldToCell(col.transform.position);
+            if (!tilemap.HasTile(cellPosition))
+            {
+                return;
+            }
 
-        Vector3Int tilePos = tilemap.WorldToCell(collision.transform.position);
+            Effect(cellPosition);
+        }
+    }
+
+    protected override void Effect(Vector3Int tilePos)
+    {
         tilemap.SetTile(tilePos, null);
         varController.coins++;
         audioController.PlaySound("Coin");

@@ -137,8 +137,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 828f7a09f7a2b7243be8ac4824b79608, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &136750834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -215,8 +215,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9976f7c279ab6674da6f4f5aae9b545a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   timer: {fileID: 136318694}
   setCamPos: {x: 0, y: 0, z: 0}
 --- !u!1001 &349747752
@@ -285,6 +285,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4386132469385434206, guid: c39de09ee24d08d499ec839337b8a0ba, type: 3}
   m_PrefabInstance: {fileID: 349747752}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224368882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9976f7c279ab6674da6f4f5aae9b545a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  timer: {fileID: 136318694}
+  setCamPos: {x: 0, y: 0, z: 0}
 --- !u!1 &379136710
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,8 +689,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f4db5d354e5fa74ca966c086ef0d3c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
   CoinSpinEffect: {fileID: 1527460809095344732, guid: 8b87ab7914a8cef4b8b97c42346004bb, type: 3}
 --- !u!66 &379136716
@@ -8997,8 +9005,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4e2f39515d5408449c3b23bc83f0cfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   goombaPrefab: {fileID: 8636182426944618358, guid: de3a71917e948684f92b1cf10f897760, type: 3}
   initialSpawn:
   - {fileID: 772563075}
@@ -9521,8 +9529,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f57993feabb34d498cc12d7adedc4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   usedBlockSprite: {fileID: 0}
 --- !u!1001 &763851470
 PrefabInstance:
@@ -9836,8 +9844,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1eedbcc0896af40bede1976c7aa3b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
   mushroom: {fileID: 0}
   fireflower: {fileID: 0}
@@ -9856,8 +9864,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54bdaf8a5cc61fa41b41a006f314afcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &988602675 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1070300175252897314, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
@@ -13413,8 +13421,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1eedbcc0896af40bede1976c7aa3b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
   mushroom: {fileID: 4018227990655499726, guid: 78631d8371aee7c4e933b421a20354a7, type: 3}
   fireflower: {fileID: 1715067539239676229, guid: 862a53efa7c0c934ba300e538667fb13, type: 3}
@@ -13746,8 +13754,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a612faa66087e04a889feae7428c68b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   flag: {fileID: 1249449741}
   timer: {fileID: 136318694}
 --- !u!4 &1702496504 stripped
@@ -14090,7 +14098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897316, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_Material
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897317, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_Enabled
@@ -14186,11 +14194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8138229032885720795, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: fireDir
-      value: 
+      value:
       objectReference: {fileID: 384909566}
     - target: {fileID: 8138229032885720795, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: fireBall
-      value: 
+      value:
       objectReference: {fileID: 7590917149382549739, guid: 392bacbeb773cc2448fae57e1007129d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
@@ -14435,8 +14443,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1eedbcc0896af40bede1976c7aa3b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
   mushroom: {fileID: 0}
   fireflower: {fileID: 0}
@@ -14535,8 +14543,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3c9ddd0054959b4ba09428f82f2a109, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   destination: Underground
   pressUp: 0
   pressDown: 1
@@ -14594,8 +14602,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2549601e2af01c14e87dc6704a4dad50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &2968286547963270877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14653,7 +14661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2968286548113052631, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
       propertyPath: audioClips.Array.data[17]
-      value: 
+      value:
       objectReference: {fileID: 8300000, guid: 796f769434e079b4995da414fcf1410e, type: 3}
     - target: {fileID: 2968286548113052632, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
       propertyPath: m_Name
@@ -14665,7 +14673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7521121741747036987, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
       propertyPath: followObject
-      value: 
+      value:
       objectReference: {fileID: 988602675}
     - target: {fileID: 7521121741747036987, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
       propertyPath: followOffset.y
