@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: -1
-  movementSpeed: 6
+  movementSpeed: 3
   bounceStrength: 17
   timeBeforeRemoval: 1
 --- !u!50 &-9189851611007247043

@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         isOnGround = Physics2D.OverlapCircle(bottom.position, radius, Ground); //Physics2D.OverlapCircle returns true if the bottom circle collide with the ground layerMask.
+        bottom.gameObject.SetActive(!isOnGround);
         if (isOnGround)
         {
             jumpTimeCounter = jumpTime; //Reset Jump Counter

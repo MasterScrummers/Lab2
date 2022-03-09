@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ExtractLifeBehaviuor : MovingPowerup
+public class ExtraLifeBehaviour : MovingPowerup
 {
     protected override void Effect(GameObject player)
     {
@@ -10,6 +8,4 @@ public class ExtractLifeBehaviuor : MovingPowerup
         gamecontroller.GetComponent<VariableController>().lives++;
         gamecontroller.GetComponent<AudioController>().PlaySound("1-Up");
     }
-
-
 }

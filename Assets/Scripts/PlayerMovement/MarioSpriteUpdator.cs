@@ -59,16 +59,15 @@ public class MarioSpriteUpdator : MonoBehaviour
         {
             animator.SetTrigger("Death");
             playerState.TriggerDeath(true);
-        } 
-        
-            else if (PowerState <= amount)
+        } else
         {
             PowerState = amount;
         }
     }
 
     public void Respawn() {
-        animator.SetTrigger("Respawn");
+        PowerState = 0;
+        animator.Play("Base Layer.Small Mario.Small_Mario_Idle", 0);
     }
 
     void OnTriggerEnter2D(Collider2D other) {

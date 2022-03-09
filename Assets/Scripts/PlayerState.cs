@@ -57,6 +57,9 @@ public class PlayerState : MonoBehaviour
         audioController.StopMusic();
         audioController.PlaySound("Death");
 
+        playerRigidbody2D.velocity = Vector2.zero;
+        playerRigidbody2D.angularVelocity = 0f;
+
         EnableColliders(false);
 
         deathSeq = true;
@@ -68,12 +71,13 @@ public class PlayerState : MonoBehaviour
     }
 
     void StartDeathAnim() {
+        playerRigidbody2D.AddForce(new Vector2(0f, 40), ForceMode2D.Impulse);
         
-        // Stop mario
-        playerRigidbody2D.velocity = Vector2.zero;
-        playerRigidbody2D.angularVelocity = 0f;
-        
-        playerRigidbody2D.AddForce(new Vector2(0f, 400));
+        Vector2 vel = playerRigidbody2D.velocity;
+        vel.y = vel.y > 25 ? 25 : vel.y;
+        playerRigidbody2D.velocity = vel;
+
+        playerRigidbody2D.gravityScale = 5;
     }
 
     public void TriggerRespawn() {
@@ -89,6 +93,7 @@ public class PlayerState : MonoBehaviour
         timer.ResetTimer();
         timer.PauseTimer(false);
         currentLives = varController.DecrementLife();
+        varController.ResetScore();
     }
 
     void TriggerGameOver() {
