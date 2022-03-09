@@ -6,7 +6,7 @@ public class VariableController : MonoBehaviour
     public int coins = 0;
 
     const int max_lives = 10;
-    public int lives { get; private set; } = 10;
+    public int lives  = 10;
 
     public void ResetScore()
     {

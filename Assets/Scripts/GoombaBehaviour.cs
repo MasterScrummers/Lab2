@@ -40,13 +40,20 @@ public class GoombaBehaviour : MonoBehaviour
 
         if (collision.tag == "FireBall")
         {
-            Destroy(gameObject);
+
+            DestorySelf();
         }
     }
 
     IEnumerator DeathAnimation()
     {
         yield return new WaitForSecondsRealtime(timeBeforeRemoval);
+        DestorySelf();
+    }
+
+    private void DestorySelf()
+    {
+        DoStatic.GetGameController().GetComponent<VariableController>().score += 100;
         Destroy(gameObject);
     }
 }

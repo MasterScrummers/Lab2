@@ -59,7 +59,9 @@ public class MarioSpriteUpdator : MonoBehaviour
         {
             animator.SetTrigger("Death");
             playerState.TriggerDeath(true);
-        } else
+        } 
+        
+            else if (PowerState <= amount)
         {
             PowerState = amount;
         }

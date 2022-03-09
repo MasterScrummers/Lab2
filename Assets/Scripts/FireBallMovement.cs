@@ -5,9 +5,9 @@ using UnityEngine;
 public class FireBallMovement : MonoBehaviour
 {
     private Animator animator;
-
     //Need Change
-    float speed = 5.0f;
+    float speed = 10.0f;
+    private float lifeTime = 2.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class FireBallMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        BulletLifeTime();
     }
 
     void OnTriggerEnter2D(Collider2D hitinfo)
@@ -26,12 +26,14 @@ public class FireBallMovement : MonoBehaviour
         {
             animator.SetTrigger("isHit");
             Destroy(GetComponent<Rigidbody2D>());
+
+
         }
     }
 
-    private void Destroy()
+    private void DestorySelf()
     {
-
+        DoStatic.GetGameController().GetComponent<VariableController>().score += 500;
         Destroy(gameObject);
         
     }
@@ -45,5 +47,17 @@ public class FireBallMovement : MonoBehaviour
             rb.velocity *= -1;
         }
         
+
     }
+    void BulletLifeTime()
+    {
+        lifeTime -= Time.deltaTime;
+
+        if (lifeTime < 0)
+        {
+            Destroy(gameObject);
+
+        }
+    }
+
 }
