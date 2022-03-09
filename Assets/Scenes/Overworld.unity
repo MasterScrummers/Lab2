@@ -12347,7 +12347,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1882125350, guid: eb8ca52d2923a1444b044a1c7e91c10d, type: 3}
+  m_Sprite: {fileID: -1158172220, guid: eb8ca52d2923a1444b044a1c7e91c10d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13009,6 +13009,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1070300175252897317, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.9375
+      objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897319, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: speed
       value: 5
@@ -13031,11 +13035,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 180.12
+      value: 184.307
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.72
+      value: 0.478
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13076,6 +13080,18 @@ PrefabInstance:
     - target: {fileID: 1070300175252897321, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_FlipY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070300175252897321, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070300175252897321, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070300175252897321, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3091953582918901020, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_TagString

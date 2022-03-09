@@ -72,6 +72,7 @@ public class FlagEnding : MonoBehaviour
 
                 marioFlagTween.Target.position = marioFlagTween.EndPos;
                 marioFlagTween = null;
+                player.GetComponent<Animator>().speed = 0;
             }
         }
 
@@ -95,6 +96,10 @@ public class FlagEnding : MonoBehaviour
 
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         player.GetComponent<Rigidbody2D>().angularVelocity = 0f;
+ 
+        // player.GetComponent<Animator>().Play("Base Layer.Cutscene Walk.Big_Mario_End", 0);
+        player.GetComponent<Animator>().Play("Base Layer.Cutscene Walk.Small_Mario_End", 0);
+        player.transform.rotation = Quaternion.Euler(0, 180, 0);
 
         AddFlagTween();
         AddMarioFlagTween();
@@ -108,12 +113,14 @@ public class FlagEnding : MonoBehaviour
         yield return new WaitForSeconds(0.05f);
 
         player.transform.position = new Vector2(190f, player.transform.position.y);
-        player.transform.rotation = Quaternion.Euler(0, 180, 0);
+        player.transform.rotation = Quaternion.identity;
 
         yield return new WaitForSeconds(1);
 
         player.transform.rotation = Quaternion.identity;
-        player.GetComponent<Animator>().Play("Base Layer.Cutscene Walk.Small_Mario_Walking", 0);
+
+        player.GetComponent<Animator>().speed = 1;
+        player.GetComponent<Animator>().SetTrigger("CutsceneWalk");
         marioWalk = true;
 
         yield break;
