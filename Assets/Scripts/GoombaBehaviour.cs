@@ -31,7 +31,9 @@ public class GoombaBehaviour : MonoBehaviour
             GetComponent<Animator>().SetTrigger("Death");
             DoStatic.GetGameController().GetComponent<AudioController>().PlaySound("Goomba Stomp");
             collision.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, bounceStrength));
+            movementSpeed = 0;
             Destroy(GetComponent<BoxCollider2D>());
+            Destroy(GetComponentInParent<Rigidbody2D>());
             StartCoroutine(DeathAnimation());
         }
     }

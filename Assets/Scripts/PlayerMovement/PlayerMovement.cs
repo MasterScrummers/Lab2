@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(MarioSpriteUpdator))]
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 5;
 
     public float jumpForce; //How High Player Jump
     public float jumpTime;  //Maxmium Time on air
@@ -56,9 +56,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        float forward = input.horizontal;
-        Vector2 move = new Vector2(forward, 0.0f);
-        transform.Translate(move * speed * Time.deltaTime, Space.World);
+        if (input.vertical != -1)
+        {
+            float forward = input.horizontal;
+            Vector2 currentVelocity = rb.velocity;
+            currentVelocity.x = Mathf.Clamp(currentVelocity.x + forward, -speed, speed);
+            rb.velocity = currentVelocity;
+        }
     }
 
     void Jump()
