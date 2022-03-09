@@ -1,50 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
-using UnityEngine.UI;
 
-public class CoinFloat : MonoBehaviour
+public class CoinFloat : BlockBase
 {
-    int numCoins = 0;
-    Tilemap tilemap;
+    protected override void OnCollisionEnter2D(Collision2D col) {}
 
-    public Text coinsUI;
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        tilemap = transform.GetComponent<Tilemap>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Player")
+        if (!collision.CompareTag("Player"))
         {
-            if (tilemap)
-            {
-                Vector3Int cellPosition = tilemap.WorldToCell(col.gameObject.transform.position);
-                
-                tilemap.SetTile(new Vector3Int(cellPosition.x+1, cellPosition.y, cellPosition.z), null);
-                tilemap.SetTile(new Vector3Int(cellPosition.x-1, cellPosition.y, cellPosition.z), null);
-                tilemap.SetTile(new Vector3Int(cellPosition.x, cellPosition.y+1, cellPosition.z), null);
-                tilemap.SetTile(new Vector3Int(cellPosition.x, cellPosition.y-1, cellPosition.z), null);
-                numCoins++;
-                coinsUI.text = "COINS\n" + numCoins;
-                
-                Debug.Log(cellPosition); 
-            }
-            else
-            {
-                Debug.Log("No Tilemap");
-            }
-            
+            return;
         }
-    
+
+        Vector3Int tilePos = tilemap.WorldToCell(collision.transform.position);
+        tilemap.SetTile(tilePos, null);
+        varController.coins++;
+        audioController.PlaySound("Coin");
     }
 }
