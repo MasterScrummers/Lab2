@@ -20,32 +20,15 @@ public class PlayerMovement : MonoBehaviour
     public float radius; //the float groundCheckRadius allows you to set a radius for the groundCheck, to adjust the way you interact with the ground*/
 
     private Rigidbody2D rb;
-    private BoxCollider2D playerCollider;
     private Animator animator;
     private InputController input;
 
-    private float walkSpeed;
-
-
-    private Vector2 standColliderSize;
-    private Vector2 standColliderOffset;
-    private Vector2 crouchColliderSize;
-    private Vector2 crouchColliderOffset;
-    float crouchHeight = 0.7f;
-
     void Start()
     {
-        walkSpeed = speed;
         jumpTimeCounter = jumpTime; //Set Max jump time = counter
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        playerCollider = GetComponent<BoxCollider2D>();
         input = DoStatic.GetGameController().GetComponent<InputController>();
-
-        standColliderSize = playerCollider.size;
-        standColliderOffset = playerCollider.offset;
-        crouchColliderSize = new Vector2(standColliderSize.x, standColliderSize.y * crouchHeight);
-        crouchColliderOffset = new Vector2(standColliderOffset.x, standColliderOffset.y * crouchHeight);
     }
 
     void Update()

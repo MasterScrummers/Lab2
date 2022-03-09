@@ -2,7 +2,6 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
-[RequireComponent(typeof(BoxCollider2D))]
 public class MarioSpriteUpdator : MonoBehaviour
 {
     private Animator animator;
@@ -12,6 +11,8 @@ public class MarioSpriteUpdator : MonoBehaviour
     private PlayerState playerState;
     public int PowerState = 0;
 
+    private BoxCollider2D head;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,9 @@ public class MarioSpriteUpdator : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         input = DoStatic.GetGameController().GetComponent<InputController>();
         playerState = DoStatic.GetGameController().GetComponent<PlayerState>();
+
+        head = GameObject.FindGameObjectWithTag("head").GetComponent<BoxCollider2D>();
+        UpdateCollider();
     }
 
     void Update()
@@ -26,6 +30,8 @@ public class MarioSpriteUpdator : MonoBehaviour
         animator.SetBool("IsCrouching", input.vertical < 0);
         animator.SetBool("IsMoving", input.horizontal != 0);
         animator.SetInteger("PowerState", PowerState);
+
+
         if (input.horizontal != 0)
         {
             sprite.flipX = input.horizontal < 0;
@@ -59,5 +65,21 @@ public class MarioSpriteUpdator : MonoBehaviour
     private void FireAttack()
     {
         Debug.Log("Attacking!");
+    }
+
+    /// <summary>
+    /// This is used according to the animation,
+    /// </summary>
+    private void UpdateCollider()
+    {
+        Destroy(GetComponent<BoxCollider2D>());
+        BoxCollider2D bc = gameObject.AddComponent<BoxCollider2D>();
+        Vector2 size = bc.size;
+        size.x *= 0.8f;
+        bc.size = size;
+
+        Vector2 headOffset = head.offset;
+        headOffset.y = bc.size.y;
+        head.offset = headOffset;
     }
 }
