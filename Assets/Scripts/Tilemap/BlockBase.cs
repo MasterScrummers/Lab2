@@ -21,14 +21,14 @@ public abstract class BlockBase : MonoBehaviour
     /// <summary>
     /// Meant to be overridden.
     /// </summary>
-    protected virtual void Effect(Vector3Int tilePos) {}
+    protected virtual void Effect() {}
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D col)
     {
         //To check whether collisions occurs with Mario's head (i.e only trigger coin from underneath block)
-        if (collision.collider.tag == "head")
+        if (col.collider.tag == "head")
         {
-            Vector3Int cellPosition = tilemap.WorldToCell(collision.GetContact(0).point);
+            Vector3Int cellPosition = tilemap.WorldToCell(col.GetContact(0).point);
             cellPosition.y++;
 
             if (!tilemap.HasTile(cellPosition))
@@ -36,10 +36,11 @@ public abstract class BlockBase : MonoBehaviour
                 return;
             }
 
-            if ((Tile)tilemap.GetTile(cellPosition) != usedBlockSprite)
+            Tile colBlock = (Tile)tilemap.GetTile(cellPosition);
+            if (colBlock != usedBlockSprite)
             {
                 tilemap.SetTile(cellPosition, usedBlockSprite);
-                Effect(cellPosition);
+                Effect();
             }
         }
     }
