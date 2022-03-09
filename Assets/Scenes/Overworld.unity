@@ -511,6 +511,179 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
+<<<<<<< Updated upstream
+=======
+--- !u!66 &379136716
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379136710}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 379136714}
+    m_ColliderPaths:
+    - - X: 140000000
+        Y: 50000000
+      - X: 130000000
+        Y: 50000000
+      - X: 130000000
+        Y: 40000000
+      - X: 140000000
+        Y: 40000000
+    - - X: 860000000
+        Y: 50000000
+      - X: 850000000
+        Y: 50000000
+      - X: 850000000
+        Y: 40000000
+      - X: 860000000
+        Y: 40000000
+    - - X: 1220000000
+        Y: 50000000
+      - X: 1200000000
+        Y: 50000000
+      - X: 1200000000
+        Y: 40000000
+      - X: 1220000000
+        Y: 40000000
+    - - X: 80000000
+        Y: 10000000
+      - X: 70000000
+        Y: 10000000
+      - X: 70000000
+        Y: 0
+      - X: 80000000
+        Y: 0
+    - - X: 150000000
+        Y: 10000000
+      - X: 140000000
+        Y: 10000000
+      - X: 140000000
+        Y: 0
+      - X: 150000000
+        Y: 0
+    - - X: 860000000
+        Y: 10000000
+      - X: 850000000
+        Y: 10000000
+      - X: 850000000
+        Y: 0
+      - X: 860000000
+        Y: 0
+    - - X: 980000000
+        Y: 10000000
+      - X: 970000000
+        Y: 10000000
+      - X: 970000000
+        Y: 0
+      - X: 980000000
+        Y: 0
+    - - X: 1010000000
+        Y: 10000000
+      - X: 1000000000
+        Y: 10000000
+      - X: 1000000000
+        Y: 0
+      - X: 1010000000
+        Y: 0
+    - - X: 1040000000
+        Y: 10000000
+      - X: 1030000000
+        Y: 10000000
+      - X: 1030000000
+        Y: 0
+      - X: 1040000000
+        Y: 0
+    - - X: 1630000000
+        Y: 10000000
+      - X: 1620000000
+        Y: 10000000
+      - X: 1620000000
+        Y: 0
+      - X: 1630000000
+        Y: 0
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 121.99998, y: 4}
+      - {x: 121.99998, y: 5}
+      - {x: 120, y: 4.999971}
+      - {x: 120.00003, y: 4}
+    - - {x: 85.99997, y: 4}
+      - {x: 85.99997, y: 5}
+      - {x: 85, y: 4.999971}
+      - {x: 85.00003, y: 4}
+    - - {x: 13.999971, y: 4}
+      - {x: 13.999971, y: 5}
+      - {x: 13, y: 4.999971}
+      - {x: 13.00003, y: 4}
+    - - {x: 162.99997, y: 0}
+      - {x: 162.99997, y: 1}
+      - {x: 162, y: 0.99997073}
+      - {x: 162.00003, y: 0}
+    - - {x: 103.99997, y: 0}
+      - {x: 103.99997, y: 1}
+      - {x: 103, y: 0.99997073}
+      - {x: 103.00003, y: 0}
+    - - {x: 100.99997, y: 0}
+      - {x: 100.99997, y: 1}
+      - {x: 100, y: 0.99997073}
+      - {x: 100.00003, y: 0}
+    - - {x: 97.99997, y: 0}
+      - {x: 97.99997, y: 1}
+      - {x: 97, y: 0.99997073}
+      - {x: 97.00003, y: 0}
+    - - {x: 85.99997, y: 0}
+      - {x: 85.99997, y: 1}
+      - {x: 85, y: 0.99997073}
+      - {x: 85.00003, y: 0}
+    - - {x: 14.999971, y: 0}
+      - {x: 14.999971, y: 1}
+      - {x: 14, y: 0.99997073}
+      - {x: 14.000029, y: 0}
+    - - {x: 7.9999704, y: 0}
+      - {x: 7.9999704, y: 1}
+      - {x: 7, y: 0.99997073}
+      - {x: 7.0000296, y: 0}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+--- !u!50 &379136717
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379136710}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!4 &384909566 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3665712134210286933, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+  m_PrefabInstance: {fileID: 1986753433}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1 &463759746
 GameObject:
   m_ObjectHideFlags: 0
@@ -12801,7 +12974,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 0
+=======
+      value: -4.55
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12839,6 +13016,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1070300175252897321, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070300175252897321, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3091953582918901020, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138229032885720795, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: fireDir
+      value: 
+      objectReference: {fileID: 384909566}
+    - target: {fileID: 8138229032885720795, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
+      propertyPath: fireBall
+      value: 
+      objectReference: {fileID: 7590917149382549739, guid: 392bacbeb773cc2448fae57e1007129d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
 --- !u!1 &2058858829
