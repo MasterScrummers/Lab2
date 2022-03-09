@@ -33,12 +33,12 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    public void ChangeScene(string sceneName, Vector3 setPlayerPosition)
+    public void ChangeScene(string sceneName, Vector3 setPlayerPosition, Vector3 setCamPos)
     {
-        StartCoroutine(LoadLevel(sceneName, setPlayerPosition));
+        StartCoroutine(LoadLevel(sceneName, setPlayerPosition, setCamPos));
     }
 
-    IEnumerator LoadLevel(string sceneName, Vector3 setPlayerPosition)
+    IEnumerator LoadLevel(string sceneName, Vector3 setPlayerPosition, Vector3 setCamPos)
     {
         AsyncOperation async = DoStatic.LoadScene(sceneName);
         while (!async.isDone)
@@ -48,8 +48,8 @@ public class SceneController : MonoBehaviour
         currentScene = DoStatic.GetSceneName();
 
         player.position = setPlayerPosition;
-        setPlayerPosition.z = -10;
-        GetComponentInChildren<Camera>().gameObject.transform.position = setPlayerPosition;
+        // setPlayerPosition.z = -10;
+        GetComponentInChildren<Camera>().gameObject.transform.localPosition = setCamPos;
         DoSceneStartUp();
     }
 }

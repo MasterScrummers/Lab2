@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2968286548113052629, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2968286548113052629, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 233201545}
   - component: {fileID: 233201544}
   - component: {fileID: 233201546}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Unbreakable Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1210,7 +1210,7 @@ GameObject:
   - component: {fileID: 688610392}
   - component: {fileID: 688610391}
   - component: {fileID: 688610393}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1794,65 +1794,8 @@ Transform:
   - {fileID: 688610390}
   - {fileID: 539126492}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &998497258
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052730, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170849633533052734, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
-      propertyPath: m_Name
-      value: Block Mario
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e58a2a7f8809a5f46aea75c76321d240, type: 3}
 --- !u!1 &2140124465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,7 +1808,7 @@ GameObject:
   - component: {fileID: 2140124467}
   - component: {fileID: 2140124466}
   - component: {fileID: 2140124469}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipe Entrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1929,7 +1872,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2140124469
 MonoBehaviour:

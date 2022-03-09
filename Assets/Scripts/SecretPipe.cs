@@ -14,10 +14,13 @@ public class SecretPipe : MonoBehaviour
     private bool isPressing;
 
     public Vector3 setPlayerPosition;
+    Vector3 setCamPos;
 
     void Start()
     {
         GetComponent<BoxCollider2D>().isTrigger = true;
+
+        setCamPos = new Vector3(0, 0, -10);
     }
 
     void Update()
@@ -29,7 +32,7 @@ public class SecretPipe : MonoBehaviour
         if (isColliding && isPressing)
         {
             DoStatic.LoadScene(destination);
-            GetComponent<ControllerFinder>().gameController.GetComponent<SceneController>().ChangeScene(destination, setPlayerPosition);
+            GetComponent<ControllerFinder>().gameController.GetComponent<SceneController>().ChangeScene(destination, setPlayerPosition, setCamPos);
             Destroy(gameObject);
         }
     }

@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 4445140817576949097
     second: Flag
+  - first:
+      213: 2877471580529523173
+    second: 
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1031,7 +1034,28 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Block_Coin_0
+      name: 
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e97eb03825dee720800000000000000
+      internalID: 2877471580529523173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_Coins_0
       rect:
         serializedVersion: 2
         x: 434
@@ -1039,20 +1063,20 @@ TextureImporter:
         width: 1
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 901f24036e3febf4682d216b6bfcc4e4
-      internalID: -1600894453
+      spriteID: 2e3beb5973e1b2442a0fe9cbe05e8ed1
+      internalID: -2131706431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Block_Coin_1
+      name: Block_Coins_1
       rect:
         serializedVersion: 2
         x: 440
@@ -1060,20 +1084,20 @@ TextureImporter:
         width: 4
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a5aa9c9e04b0f24bb09f8f217e489fa
-      internalID: -1073824077
+      spriteID: 53b3765f929bd92479c2831fced2db86
+      internalID: -1703874161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Block_Coin_2
+      name: Block_Coins_2
       rect:
         serializedVersion: 2
         x: 448
@@ -1081,20 +1105,20 @@ TextureImporter:
         width: 8
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56425f0d76f50e64da3f30905918e623
-      internalID: -1973511086
+      spriteID: bcd33f03450be9843afab0cb09a6e528
+      internalID: 1958417500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Block_Coin_3
+      name: Block_Coins_3
       rect:
         serializedVersion: 2
         x: 461
@@ -1102,14 +1126,14 @@ TextureImporter:
         width: 4
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3857b2e6b2fe0e041af37465b1d29670
-      internalID: -1663864446
+      spriteID: 23a60e6fa4d57f145b23307a205243e1
+      internalID: -1032476813
       vertices: []
       indices: 
       edges: []
@@ -1123,14 +1147,14 @@ TextureImporter:
         width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80e68332fa9bf8744a9eb42717ff2cd4
-      internalID: -313135934
+      spriteID: 7f050123aeca89244a7267feaec655d7
+      internalID: -1685025
       vertices: []
       indices: 
       edges: []
@@ -1144,14 +1168,14 @@ TextureImporter:
         width: 10
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2493ed8728bfc084fbe03de8c1801c54
-      internalID: 117331463
+      spriteID: 8b5e38079a12c5b49b5133ecd770b4f4
+      internalID: 555579465
       vertices: []
       indices: 
       edges: []
@@ -1165,14 +1189,35 @@ TextureImporter:
         width: 10
         height: 14
       alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa85f97f61b1c3f41a1fbe90724ab61f
+      internalID: -683018569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fla
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1152
+        width: 16
+        height: 16
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e34502da7df6fe748a332ef141a27c4e
-      internalID: -1651211899
+      spriteID: 45d5998e3abefc442bae847f1b17ab60
+      internalID: -1158172220
       vertices: []
       indices: 
       edges: []
@@ -1180,7 +1225,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f8afb91651f744946813d79e67815274
+    spriteID: bd9bae11e9b955f459256a9beccf3eb4
     internalID: 0
     vertices: []
     indices: 
@@ -1196,49 +1241,50 @@ TextureImporter:
       Big_Mario_Run_1: 16778990
       Fireflower_2: 725812332
       Mario_Pole_Slide_1: 756808564
-      Coin_0: -313135934
-      Block_Coin_2: -1973511086
+      Coin_0: -1685025
       Fireflower_Mario_Run_2: -1393195399
       Fireflower_Mario_Crouch: 1316010831
-      explosion_1: 2075160312
-      Block_Coin_1: -1073824077
+      explosion_1: 1316010831
       Gooma_Idle: -1233725993
       Fireflower_0: -544517673
       Star_0: 475462455
       Big_Mario_Quick_Turn: -894605913
+      Fla: -1158172220
       1Up: -996091554
       Star_3: 1610030134
       Powerup: -976168957
-      Coin_1: 117331463
+      Coin_1: 555579465
       Small_Mario_Quick_Turn: 883464090
       Fireflower_1: 1245055178
       Star_2: -1247576648
       Small_Mario_Run_1: 200746463
       Star_1: -770724617
       fire_3: 763066471
+      Block_Coins_1: -1703874161
       Goomba_Death: -964177110
       Death: 1413532066
       Big_Mario_Idle: 1310059616
       explosion_2: -1773401282
       Flag: 4445140817576949097
       Fireflower_Mario_Quick_Turn: 661617625
-      explosion_0: -1484820087
+      Block_Coins_0: -2131706431
       Fireflower_Mario_Run_1: 1323928153
       Big_Mario_Run_2: -1456061611
+      explosion_0: -1484820087
       Mario_Pole_Slide_0: -133197455
       Big_Mario_Crouch: -388509412
       Fireflower_Mario_Run_0: -1602486854
       Fireflower_Mario_Jump: -1484181788
       Big_Mario_Run_0: 1622202132
       fire_0: 698558119
-      Coin_2: -1651211899
+      Coin_2: -683018569
       Fireflower_Mario_Idle: 1861611467
       Big_Mario_Jump: -1470457607
       fire_1: -1859812022
       Small_Mario_Run_0: 203528216
-      Block_Coin_3: -1663864446
-      Block_Coin_0: -1600894453
+      Block_Coins_3: -1032476813
       Small_Mario_Run_2: 1980082606
+      Block_Coins_2: 1958417500
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

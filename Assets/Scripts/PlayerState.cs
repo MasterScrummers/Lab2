@@ -10,13 +10,15 @@ public class PlayerState : MonoBehaviour
     private VariableController varController;
     private AudioController audioController;
 
-    Vector3 playerStartPos = new Vector3(-8.38f, -2.56f);
+    Vector3 playerStartPos = new Vector3(-4.55f, 0f, 0f);
 
     const float deathLength = 5.0f;
     float deathTimer;
     bool deathSeq;
     
     int currentLives;
+
+    public Vector3 setCamPos;
     
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,7 @@ public class PlayerState : MonoBehaviour
         deathSeq = false;
         deathTimer = deathLength;
         currentLives = varController.ResetLives();
+        setCamPos = new Vector3 (0, 0, -10);
     }
 
     // Update is called once per frame
@@ -81,7 +84,7 @@ public class PlayerState : MonoBehaviour
 
         player.GetComponent<MarioSpriteUpdator>().Respawn();
 
-        GetComponent<SceneController>().ChangeScene("Overworld", playerStartPos);
+        GetComponent<SceneController>().ChangeScene("Overworld", playerStartPos, setCamPos);
 
         timer.ResetTimer();
         timer.PauseTimer(false);
