@@ -21,7 +21,7 @@ public abstract class BlockBase : MonoBehaviour
     /// <summary>
     /// Meant to be overridden.
     /// </summary>
-    protected virtual void Effect() {}
+    protected virtual void Effect(Vector3Int tilePos) {}
 
     private void OnCollisionEnter2D(Collision2D col)
     {

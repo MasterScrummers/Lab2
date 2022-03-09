@@ -58,7 +58,6 @@ public class PlayerMovement : MonoBehaviour
         if (grounded)
         {
             jumpTimeCounter = jumpTime; //Reset Jump Counter
-            animator.SetBool("IsJumping", false);
         }
 
         // If (Player Press the space bar or w) And Mario is on the ground
@@ -67,7 +66,6 @@ public class PlayerMovement : MonoBehaviour
             //Then Jump
             rb.velocity = new Vector2(rb.velocity.x, jumpForce) ;
             stoppedJumping = false;
-            animator.SetBool("IsJumping", true);
         }
 
         //If Player is holding space bar
@@ -79,7 +77,6 @@ public class PlayerMovement : MonoBehaviour
                 //Jump Higher, at the same time start the counter
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 jumpTimeCounter -= Time.deltaTime;
-                animator.SetBool("IsJumping", true);
             }
         }
 

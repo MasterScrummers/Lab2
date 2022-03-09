@@ -200,8 +200,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9976f7c279ab6674da6f4f5aae9b545a, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &379136710
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,8 +496,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f4db5d354e5fa74ca966c086ef0d3c2, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
 --- !u!1 &463759746
 GameObject:
@@ -9105,8 +9105,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1eedbcc0896af40bede1976c7aa3b5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
   item: {fileID: 656200476882525782, guid: 4778e71664bbecc46aea7e6144ef5ade, type: 3}
 --- !u!1 &930831225 stripped
@@ -9124,8 +9124,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54bdaf8a5cc61fa41b41a006f314afcc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &988602675 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1070300175252897314, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
@@ -12406,8 +12406,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1eedbcc0896af40bede1976c7aa3b5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
   item: {fileID: 4018227990655499726, guid: 78631d8371aee7c4e933b421a20354a7, type: 3}
 --- !u!1 &1693013197
@@ -12672,11 +12672,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a612faa66087e04a889feae7428c68b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   flag: {fileID: 1249449741}
-  slideSprite: {fileID: -167863884, guid: f07bb254e2b4ec142b3c8243515194e7, type: 3}
-  normalSprite: {fileID: 21300000, guid: bbba97d71829ef34d905e5b9fce2d59f, type: 3}
 --- !u!1 &1798125569
 GameObject:
   m_ObjectHideFlags: 0
@@ -12748,7 +12746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897316, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_Material
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897317, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_Enabled
@@ -12772,11 +12770,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 180.05
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1070300175252897320, guid: 8f060466e0e387c49814fabc424f03ef, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13053,8 +13051,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e1eedbcc0896af40bede1976c7aa3b5, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   usedBlockSprite: {fileID: 11400000, guid: c3a24899752ffb44f9df3c8d8d1c0e91, type: 2}
   item: {fileID: 4018227990655499726, guid: 55d3e508438e9cc4ea3c9c352f23bcfa, type: 3}
 --- !u!1 &2133963648
@@ -13086,8 +13084,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3c9ddd0054959b4ba09428f82f2a109, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   destination: Underground
   pressUp: 0
   pressDown: 1
@@ -13145,8 +13143,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2549601e2af01c14e87dc6704a4dad50, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2968286547963270877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13208,7 +13206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7521121741747036987, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
       propertyPath: followObject
-      value:
+      value: 
       objectReference: {fileID: 988602675}
     - target: {fileID: 7521121741747036987, guid: 07c16ee660e5bdf49a07607e30c6dbb7, type: 3}
       propertyPath: followOffset.y
