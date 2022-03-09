@@ -70,11 +70,22 @@ public class MarioSpriteUpdator : MonoBehaviour
     /// <summary>
     /// This is used according to the animation,
     /// </summary>
+    /// 
+
+    //Add this function after the frame of different animation, e.g Crouch, Upgrade Animation, Downgarde Animation
+    //So after those animation, the collider will re-size accordingly
     private void UpdateCollider()
     {
+        //Destory BoxCollider of Mario
         Destroy(GetComponent<BoxCollider2D>());
+
+        //Re-add the BoxCollider
         BoxCollider2D bc = gameObject.AddComponent<BoxCollider2D>();
+        
+        //size = Re-added Box Collider's size
         Vector2 size = bc.size;
+
+        //
         size.x *= 0.8f;
         bc.size = size;
 
