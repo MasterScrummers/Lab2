@@ -859,6 +859,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Flag
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0d4e127b2920444a6ff642f6962c50
+      internalID: -1288285105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -872,6 +893,7 @@ TextureImporter:
     nameFileIdTable:
       Small_Mario_Jump: -1366300417
       Big_Mario_Idle: 1310059616
+      Flag: -1302689684
       Fireflower_Mario_Quick_Turn: 661617625
       Fireflower_Mario_Run_1: 1323928153
       Big_Mario_Run_2: -1456061611
@@ -893,7 +915,6 @@ TextureImporter:
       Fireflower_0: -544517673
       Star_0: 475462455
       Big_Mario_Jump: -1470457607
-      SMB1_Spritesheet_0: -1302689684
       Fireflower_Mario_Idle: 1861611467
       Big_Mario_Quick_Turn: -894605913
       Small_Mario_Run_0: -1366300417

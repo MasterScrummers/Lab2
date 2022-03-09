@@ -49,18 +49,12 @@ public class PlayerState : MonoBehaviour
         }
     }
 
-    public async void TriggerDeath(bool playDeathAnim) {
+    public void TriggerDeath(bool playDeathAnim) {
 
         audioController.StopMusic();
         audioController.PlaySound("Death");
 
-        player.GetComponent<PlayerMovement>().enabled = false;
-        player.GetComponent<MarioSpriteUpdator>().enabled = false;
-
-        Transform[] children = DoStatic.GetChildren(player.transform);
-        foreach (Transform child in children) {
-            child.GetComponent<BoxCollider2D>().enabled = false;
-        }
+        EnableColliders(false);
 
         deathSeq = true;
 
@@ -71,9 +65,11 @@ public class PlayerState : MonoBehaviour
     }
 
     void StartDeathAnim() {
-        player.GetComponent<BoxCollider2D>().enabled = false;
+        
+        // Stop mario
         playerRigidbody2D.velocity = Vector2.zero;
         playerRigidbody2D.angularVelocity = 0f;
+        
         playerRigidbody2D.AddForce(new Vector2(0f, 400));
     }
 
@@ -81,14 +77,7 @@ public class PlayerState : MonoBehaviour
         deathSeq = false;
         deathTimer = deathLength;
 
-        player.GetComponent<BoxCollider2D>().enabled = true;
-        player.GetComponent<PlayerMovement>().enabled = true;
-        player.GetComponent<MarioSpriteUpdator>().enabled = true;
-
-        Transform[] children = DoStatic.GetChildren(player.transform);
-        foreach (Transform child in children) {
-            child.GetComponent<BoxCollider2D>().enabled = true;
-        }
+        EnableColliders(true);
 
         player.GetComponent<MarioSpriteUpdator>().Respawn();
 
@@ -99,5 +88,17 @@ public class PlayerState : MonoBehaviour
 
     void TriggerGameOver() {
         Debug.Log("Game over");
+    }
+
+    void EnableColliders(bool enable)
+    {
+        player.GetComponent<BoxCollider2D>().enabled = enable;
+        player.GetComponent<PlayerMovement>().enabled = enable;
+        player.GetComponent<MarioSpriteUpdator>().enabled = enable;
+
+        Transform[] children = DoStatic.GetChildren(player.transform);
+        foreach (Transform child in children) {
+            child.GetComponent<BoxCollider2D>().enabled = enable;
+        }
     }
 }
