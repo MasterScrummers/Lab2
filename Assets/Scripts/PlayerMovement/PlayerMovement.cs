@@ -34,19 +34,24 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Jump();
-        Move();
+        readInput();
     }
 
-    void Move()
+    void readInput()
     {
         if (input.vertical != -1)
         {
-            float forward = input.horizontal;
-            rb.AddForce(new Vector2(forward, 0), ForceMode2D.Impulse);
-            Vector2 currentVelocity = rb.velocity;
-            currentVelocity.x = Mathf.Clamp(currentVelocity.x, -speed, speed);
-            rb.velocity = currentVelocity;
+            float direction = input.horizontal;
+            Move(direction);
         }
+    }
+
+    public void Move(float hDirection)
+    {
+        rb.AddForce(new Vector2(hDirection, 0), ForceMode2D.Impulse);
+        Vector2 currentVelocity = rb.velocity;
+        currentVelocity.x = Mathf.Clamp(currentVelocity.x, -speed, speed);
+        rb.velocity = currentVelocity;
     }
 
     void Jump()
