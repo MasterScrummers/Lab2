@@ -17,6 +17,7 @@ TagManager:
   - Hurtbox
   - head
   - coins
+  - FireBall
   layers:
   - Default
   - TransparentFX

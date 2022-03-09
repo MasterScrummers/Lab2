@@ -17,6 +17,8 @@ public class MarioSpriteUpdator : MonoBehaviour
 
     private BoxCollider2D head;
 
+    [SerializeField] GameObject fireBall;
+    public Transform fireDir;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,7 +80,15 @@ public class MarioSpriteUpdator : MonoBehaviour
     /// </summary>
     private void FireAttack()
     {
-        Debug.Log("Attacking!");
+        Vector3 pos = transform.position;
+
+        pos.x = sprite.flipX ? gameObject.transform.position.x - 1 : gameObject.transform.position.x * 1;
+        //pos.x = pos.x * (sprite.flipX ? -1 : 1);
+        pos.y = pos.y + 1.0f;
+        Debug.Log(pos);
+        GameObject fire = Instantiate(fireBall, pos, Quaternion.identity);
+        fire.GetComponent<FireBallMovement>().SetVelocity(!sprite.flipX);
+
     }
 
     /// <summary>
