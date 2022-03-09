@@ -18,6 +18,8 @@ TagManager:
   - head
   - coins
   - FireBall
+  - GoombaSpawnPoint
+  - KoopaSpawnPoint
   layers:
   - Default
   - TransparentFX
